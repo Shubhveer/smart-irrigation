@@ -368,6 +368,22 @@ Object.assign(window.FARM_SAATHI_TRANSLATIONS.mr, {
       'Record the product, dose, date and field area after every application.':
         'हर बार उपयोग के बाद उत्पाद, मात्रा, तारीख और खेत का क्षेत्रफल दर्ज करें।',
 
+      'Before sowing': 'बुवाई से पहले',
+      'Main concern': 'मुख्य चिंता',
+      'General nutrient planning': 'सामान्य पोषण योजना',
+
+      'Use soil test recommendations instead of a general rate.':
+      'सामान्य मात्रा के बजाय मिट्टी परीक्षण की सिफारिशों को आधार बनाएं।',
+
+      'Match nutrient timing to the crop stage and local agronomic guidance.':
+      'पोषक तत्व देने का समय फसल की अवस्था और स्थानीय कृषि सलाह के अनुसार रखें।',
+
+      'After every application, record the product, amount, date, and field area.':
+      'हर बार उपयोग के बाद उत्पाद, मात्रा, तारीख और खेत का क्षेत्रफल दर्ज करें।',
+
+      'Cotton': 'कपास',
+
+
       'Chewing damage': 'कुतरने से हुआ नुकसान',
       'The symptom is a starting point for inspection, not proof of one pest.':
         'यह लक्षण निरीक्षण की शुरुआत के लिए है, किसी एक कीट की पुष्टि नहीं करता।',
@@ -432,6 +448,22 @@ Object.assign(window.FARM_SAATHI_TRANSLATIONS.mr, {
         'पोषक तत्त्वे देण्याची वेळ कापसाच्या पेरणीपूर्व अवस्थेनुसार आणि स्थानिक कृषी मार्गदर्शनानुसार ठरवा.',
       'Record the product, dose, date and field area after every application.':
         'प्रत्येक वापरानंतर उत्पादनाचे नाव, मात्रा, तारीख आणि शेताचे क्षेत्रफळ नोंदवा.',
+
+      'Before sowing': 'पेरणीपूर्वी',
+      'Main concern': 'मुख्य चिंता',
+      'General nutrient planning': 'सामान्य पोषण नियोजन',
+
+      'Use soil test recommendations instead of a general rate.':
+      'सामान्य मात्रेऐवजी माती परीक्षणाच्या शिफारशींना आधार मानावा.',
+
+      'Match nutrient timing to the crop stage and local agronomic guidance.':
+      'पोषक तत्त्व देण्याची वेळ पिकाची अवस्था आणि स्थानिक कृषी मार्गदर्शनानुसार ठरवावी.',
+
+      'After every application, record the product, amount, date, and field area.':
+      'प्रत्येक वापरानंतर उत्पादनाचे नाव, मात्रा, तारीख आणि शेताचे क्षेत्रफळ नोंदवा.',
+
+      'Cotton': 'कापूस',
+
 
       'Chewing damage': 'कुरतडल्यामुळे झालेले नुकसान',
       'The symptom is a starting point for inspection, not proof of one pest.':
