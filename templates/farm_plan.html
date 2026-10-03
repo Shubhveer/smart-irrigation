@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block title %}Farm Plan — Farm Saathi{% endblock %}
+{% block content %}
+<section class="page-head"><div class="overline">FIELD WORK</div><h1>Plan the next few days</h1><p>A simple checklist for routine farm work. It is intentionally separate from technical model screens.</p></section>
+<section class="work-panel">
+  <div class="plan-grid">
+    {% for x in tasks %}
+    <div class="plan-item"><span class="plan-day">{{x.day}}</span><div><strong>{{x.task}}</strong><p>{{x.detail}}</p></div></div>
+    {% endfor %}
+  </div>
+</section>
+<section class="work-panel"><div class="overline">RECORD KEEPING</div><h2>Keep evidence of farm decisions</h2><p>Record irrigation, fertilizer applications, disease observations, rainfall and harvest dates. These records make later decisions more reliable and are useful for your final project demonstration.</p><a class="btn btn-secondary" href="{{ url_for('predict.history') }}">Open irrigation records</a></section>
+{% endblock %}

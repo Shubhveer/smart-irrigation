@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+{% block title %}Farm Saathi — Government Agriculture News{% endblock %}
+{% block content %}
+<section class="dashboard-head"><div><div class="overline">GOVERNMENT INFORMATION</div><h1>Latest official agriculture sources</h1><p class="lead">Open official Government of India and Maharashtra agriculture portals for schemes, advisories, notifications and agriculture updates.</p></div></section>
+<section class="work-panel"><div class="panel-head"><div><div class="overline">OFFICIAL SOURCES</div><h2>Government agriculture updates</h2></div></div>
+<div class="module-grid">{% for item in news_items %}<a class="module" href="{{ item.url }}" target="_blank" rel="noopener"><span class="module-kicker">OFFICIAL</span><h3>{{ item.title }}</h3><p>{{ item.source }}</p><span class="module-link">Read official update</span></a>{% endfor %}</div>
+<p class="form-note">These links open official portals. The dashboard does not present an automatically verified list of the newest headlines.</p></section>
+{% endblock %}

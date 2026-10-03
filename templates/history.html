@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+{% block title %}Records — Farm Saathi{% endblock %}
+{% block content %}
+<section class="page-head"><div class="overline">RECORDS</div><h1>Irrigation history</h1><p>Previous irrigation checks saved by the application.</p></section>
+{% if history %}
+<div class="record-list">{% for h in history %}<div class="record"><div><strong>{{h.location}}</strong><span>{{h.created_at[:10]}}</span></div><div><span>{{h.temperature}}°C</span><span>{{h.humidity}}%</span><span>{{h.water_today}} L</span></div><a href="{{url_for('predict.download',prediction_id=h.id)}}">Report</a></div>{% endfor %}</div>
+{% else %}<section class="work-panel empty"><h2>No records yet</h2><p>Complete an irrigation check from the dashboard.</p><a class="btn btn-primary" href="{{url_for('predict.index')}}">Start a check</a></section>{% endif %}
+{% endblock %}

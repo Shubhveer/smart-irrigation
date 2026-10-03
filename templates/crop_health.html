@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block title %}Crop Health — Farm Saathi{% endblock %}
+{% block content %}
+<section class="page-head"><div class="overline">CROP HEALTH</div><h1>Check a crop problem</h1><p>Use the crop, growth stage and visible symptoms to create a first-check report.</p></section>
+<section class="two-col">
+  <form class="work-panel" method="POST">
+    <label>Crop<select name="crop"><option>Cotton</option><option>Soybean</option><option>Wheat</option><option>Sugarcane</option><option>Orange</option><option>Vegetable crop</option></select></label>
+    <label>Growth stage<select name="stage"><option>Early growth</option><option>Vegetative growth</option><option>Flowering</option><option>Fruit / pod development</option><option>Near harvest</option></select></label>
+    <label>What do you see? <span class="muted">Select all that apply.</span></label>
+    <div class="check-grid">
+      {% for s in symptoms %}
+      <label class="check"><input type="checkbox" name="symptoms" value="{{ s.key }}"><span>{{ s.name }}</span></label>
+      {% endfor %}
+    </div>
+    <label>Additional observation<textarea name="notes" placeholder="For example: problem started after rainfall, lower leaves affected, insects visible..."></textarea></label>
+    <button class="btn btn-primary">Prepare crop health report</button>
+  </form>
+  <aside class="result-side">
+    <div class="side-title">FIELD CHECK</div>
+    {% if result %}
+      <div class="result-status">{{ result.status }}</div>
+      <h2>{{ result.title }}</h2>
+      <p>{{ result.description }}</p>
+      <div class="advice-list">{% for x in result.actions %}<div>{{ x }}</div>{% endfor %}</div>
+      <p class="small-note">{{ result.note }}</p>
+    {% else %}
+      <h2>Start with what you can see.</h2>
+      <p>Leaf colour, spots, curling, wilting, holes and visible insects are useful observations. A symptom screen is not a laboratory diagnosis.</p>
+    {% endif %}
+  </aside>
+</section>
+{% endblock %}

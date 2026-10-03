@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}Farm Saathi{% endblock %}</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+Devanagari:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='farm_saathi.css') }}">
+</head>
+<body>
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="wordmark" href="{{ url_for('predict.index') }}">FARM SAATHI</a>
+    <nav class="nav">
+      <a href="{{ url_for('predict.index') }}" class="{% if request.endpoint == 'predict.index' %}active{% endif %}">Dashboard</a>
+      <a href="{{ url_for('farm.crop_health') }}" class="{% if request.endpoint == 'farm.crop_health' %}active{% endif %}">Crop Health</a>
+      <a href="{{ url_for('farm.soil') }}" class="{% if request.endpoint == 'farm.soil' %}active{% endif %}">Soil</a>
+      <a href="{{ url_for('farm.fertilizer') }}" class="{% if request.endpoint == 'farm.fertilizer' %}active{% endif %}">Fertilizer</a>
+      <a href="{{ url_for('farm.pest') }}" class="{% if request.endpoint == 'farm.pest' %}active{% endif %}">Pest Guide</a>
+      <a href="{{ url_for('farm.farm_plan') }}" class="{% if request.endpoint == 'farm.farm_plan' %}active{% endif %}">Farm Plan</a>
+      <a href="{{ url_for('predict.history') }}">Records</a>
+      <a href="{{ url_for('farmer_extra.government_news') }}">Government Agriculture News</a>
+      <a href="{{ url_for('farmer_extra.image_check') }}">Plant &amp; Soil Image Check</a>
+    </nav>
+    <div class="language">
+      <button class="lang-btn" onclick="setFarmLanguage('en')" data-lang="en">English</button>
+      <button class="lang-btn" onclick="setFarmLanguage('hi')" data-lang="hi">हिन्दी</button>
+      <button class="lang-btn" onclick="setFarmLanguage('mr')" data-lang="mr">मराठी</button>
+    </div>
+  </div>
+</header>
+
+{% with messages = get_flashed_messages() %}
+{% if messages %}
+<div class="flash-wrap">{% for message in messages %}<div class="flash">{{ message }}</div>{% endfor %}</div>
+{% endif %}
+{% endwith %}
+
+<main class="shell">{% block content %}{% endblock %}</main>
+
+<footer class="footer">
+  <div>FARM SAATHI</div>
+  <p>Practical farm information. Always confirm chemical or fertilizer rates with a local agriculture professional and the product label.</p>
+</footer>
+<script src="{{ url_for('static', filename='farm_saathi.js') }}"></script>
+<script src="{{ url_for('static', filename='translations.js') }}"></script>
+<script src="{{ url_for('static', filename='i18n.js') }}"></script>
+{% block scripts %}{% endblock %}
+</body>
+</html>

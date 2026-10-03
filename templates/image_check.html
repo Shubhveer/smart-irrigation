@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block title %}Farm Saathi — Plant & Soil Image Check{% endblock %}
+{% block content %}
+<section class="dashboard-head"><div><div class="overline">IMAGE CHECK</div><h1>Upload a plant or soil JPG</h1><p class="lead">Get a preliminary visual screening from a field photograph. This is not a confirmed disease diagnosis or laboratory soil analysis.</p></div></section>
+<section class="work-panel"><form method="POST" enctype="multipart/form-data" class="form-grid">
+<label>Analysis type<select name="mode"><option value="plant">Plant photo</option><option value="soil">Soil surface photo</option></select></label>
+<label>Choose JPG image<input type="file" name="image" accept=".jpg,.jpeg,image/jpeg" required></label>
+<button class="btn btn-primary" type="submit">Analyze image</button>
+</form>
+<div class="form-note">Use a clear JPG/JPEG photo with good lighting. For plant disease confirmation, use a validated crop-specific model or expert/lab assessment.</div>
+{% if result %}<div class="quick-info"><div><strong>Finding</strong><span>{{ result.finding }}</span></div><div><strong>Recommendation</strong><span>{{ result.recommendation }}</span></div></div>{% endif %}</section>
+{% endblock %}

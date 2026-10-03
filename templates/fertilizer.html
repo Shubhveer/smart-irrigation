@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block title %}Fertilizer Guide — Farm Saathi{% endblock %}
+{% block content %}
+<section class="page-head"><div class="overline">NUTRIENT PLANNING</div><h1>Plan fertilizer use carefully</h1><p>Use the crop and soil condition to organize questions for your fertilizer decision.</p></section>
+<section class="two-col">
+<form class="work-panel" method="POST">
+  <label>Crop<select name="crop">{% for c in crops %}<option>{{c}}</option>{% endfor %}</select></label>
+  <label>Growth stage<select name="stage"><option>Before sowing</option><option>Early growth</option><option>Vegetative growth</option><option>Flowering</option><option>Fruit / pod development</option><option>Near harvest</option></select></label>
+  <label>Soil test available?<select name="test"><option value="yes">Yes</option><option value="no">No</option></select></label>
+  <label>Main concern<select name="concern"><option>General nutrient planning</option><option>Low nitrogen suspected</option><option>Low phosphorus suspected</option><option>Low potassium suspected</option><option>Crop growth is weak</option></select></label>
+  <button class="btn btn-primary">Prepare nutrient plan</button>
+</form>
+<aside class="result-side">
+{% if result %}
+<div class="side-title">NUTRIENT PLAN</div><h2>{{result.title}}</h2><p>{{result.summary}}</p>
+<div class="advice-list">{% for x in result.actions %}<div>{{x}}</div>{% endfor %}</div>
+<p class="small-note">{{result.note}}</p>
+{% else %}
+<div class="side-title">IMPORTANT</div><h2>Fertilizer should follow the crop and soil test.</h2><p>Do not use a fixed dose for every field. The final rate depends on crop, yield target, soil test, previous crop, irrigation and local recommendations.</p>
+{% endif %}
+</aside>
+</section>
+{% endblock %}

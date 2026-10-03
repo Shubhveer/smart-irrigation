@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block title %}Irrigation Result — Farm Saathi{% endblock %}
+{% block content %}
+<section class="page-head"><div class="overline">WATER MANAGEMENT</div><h1>{{ location }}</h1><p>Today's irrigation decision and the next seven days.</p></section>
+<section class="decision {% if irrigation_needed %}decision-water{% else %}decision-wait{% endif %}">
+  <div class="decision-label">{% if irrigation_needed %}WATER TODAY{% else %}WAIT TODAY{% endif %}</div>
+  <h2>{% if irrigation_needed %}Watering is recommended for today's conditions.{% else %}Watering is not indicated for today's conditions.{% endif %}</h2>
+  {% if irrigation_needed %}<div class="litres">{{ water_needed }} <span>litres</span></div>{% endif %}
+  <p>{% if irrigation_needed %}Prefer early morning or evening. Check soil condition before starting the full field.{% else %}If the soil is visibly dry, check the soil around the root zone before deciding.{% endif %}</p>
+</section>
+<div class="metric-row"><div><span>Temperature</span><strong>{{temperature}}°C</strong></div><div><span>Humidity</span><strong>{{humidity}}%</strong></div><div><span>Rainfall</span><strong>{{rainfall}} mm</strong></div></div>
+{% if weather_alerts %}<section class="notice"><strong>Weather considerations</strong>{% for a in weather_alerts %}<p>{{a}}</p>{% endfor %}</section>{% endif %}
+{% if recommendations %}<section class="work-panel"><div class="overline">FIELD NOTES</div><h2>Practical checks</h2><div class="advice-list">{% for r in recommendations %}<div>{% if r == "IRRIGATE_TIME" %}Water early morning or evening rather than during peak heat.{% elif r == "CHECK_SOIL" %}Check soil moisture around the root zone before watering.{% elif r == "AVOID_RAIN" %}Rain is expected. Consider waiting before irrigation.{% else %}{{r}}{% endif %}</div>{% endfor %}</div></section>{% endif %}
+<section class="work-panel"><div class="overline">7-DAY OUTLOOK</div><h2>Water planning</h2><div class="week-table">{% for d in week_prediction %}<div><strong>{{d.day}}</strong><span>{% if 'Required' in d.irrigation %}Water{% else %}No watering indicated{% endif %}</span><b>{% if 'Required' in d.irrigation %}{{d.water}} L{% else %}—{% endif %}</b></div>{% endfor %}</div></section>
+<div class="action-row"><a class="btn btn-primary" href="{{url_for('predict.download',prediction_id=prediction_id)}}">Download report</a><a class="btn btn-secondary" href="{{url_for('predict.index')}}">Return to dashboard</a></div>
+{% endblock %}

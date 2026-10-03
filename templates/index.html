@@ -1,0 +1,85 @@
+{% extends "base.html" %}
+{% block title %}Farm Saathi — Dashboard{% endblock %}
+{% block content %}
+<section class="dashboard-head">
+  <div>
+    <div class="overline">FARM MANAGEMENT</div>
+    <h1>Good day. What do you need to check?</h1>
+    <p class="lead">One place for water, crop health, soil, fertilizer, weather and farm planning.</p>
+  </div>
+  <div class="location-box">
+    <span>FIELD LOCATION</span>
+    <strong id="dashLocation">Nagpur</strong>
+    <button type="button" onclick="document.getElementById('location').focus()">Change</button>
+  </div>
+</section>
+
+<section class="weather-bar">
+  <div><span>LOCATION</span><strong>Nagpur, Maharashtra</strong></div>
+  <div><span>STATUS</span><strong>Weather connected</strong></div>
+  <div><span>USE</span><strong>Check conditions before field work</strong></div>
+</section>
+
+<section class="section-head">
+  <div><div class="overline">TODAY</div><h2>Farm decisions</h2></div>
+</section>
+
+<div class="module-grid">
+  <a class="module primary-module" href="#irrigation">
+    <span class="module-kicker">01</span>
+    <h3>Water Management</h3>
+    <p>Check whether irrigation is needed today and see the next 7 days.</p>
+    <span class="module-link">Open water check</span>
+  </a>
+  <a class="module" href="{{ url_for('farm.crop_health') }}">
+    <span class="module-kicker">02</span>
+    <h3>Crop Health</h3>
+    <p>Record crop symptoms and get a practical first-check guide.</p>
+    <span class="module-link">Open crop health</span>
+  </a>
+  <a class="module" href="{{ url_for('farm.soil') }}">
+    <span class="module-kicker">03</span>
+    <h3>Soil Check</h3>
+    <p>Review pH and nutrient readings and understand what they mean.</p>
+    <span class="module-link">Open soil check</span>
+  </a>
+  <a class="module" href="{{ url_for('farm.fertilizer') }}">
+    <span class="module-kicker">04</span>
+    <h3>Fertilizer Guide</h3>
+    <p>Use crop, soil and growth stage to organize nutrient planning.</p>
+    <span class="module-link">Open fertilizer guide</span>
+  </a>
+  <a class="module" href="{{ url_for('farm.pest') }}">
+    <span class="module-kicker">05</span>
+    <h3>Pest Guide</h3>
+    <p>Check common crop symptoms and practical prevention steps.</p>
+    <span class="module-link">Open pest guide</span>
+  </a>
+  <a class="module" href="{{ url_for('farm.farm_plan') }}">
+    <span class="module-kicker">06</span>
+    <h3>Farm Plan</h3>
+    <p>Keep upcoming irrigation, inspection, nutrient and harvest tasks together.</p>
+    <span class="module-link">Open farm plan</span>
+  </a>
+</div>
+
+<section id="irrigation" class="work-panel">
+  <div class="panel-head">
+    <div><div class="overline">WATER MANAGEMENT</div><h2>Check today's irrigation</h2><p>Enter the basic field information already used by your current irrigation service.</p></div>
+  </div>
+  <form method="POST" action="{{ url_for('predict.predict') }}" class="form-grid">
+    <label>Field location<input id="location" name="location" value="Nagpur" required oninput="document.getElementById('dashLocation').textContent=this.value || 'Nagpur'"></label>
+    <label>Soil type<select name="soil_type"><option value="0">Sandy</option><option value="1" selected>Loamy</option><option value="2">Clay</option></select></label>
+    <label>Crop stage<select name="crop_stage"><option value="0">Newly planted</option><option value="1" selected>Growing</option><option value="2">Flowering</option><option value="3">Near harvest</option></select></label>
+    <label>Field size<input name="field_size" type="number" value="1" min="0.5" step="0.5"></label>
+    <button class="btn btn-primary" type="submit">Check irrigation</button>
+  </form>
+  <div class="form-note">The irrigation result uses the existing weather and irrigation service in your project. It does not change your current prediction route.</div>
+</section>
+
+<section class="quick-info">
+  <div><strong>Farmer first</strong><span>Plain language and practical actions.</span></div>
+  <div><strong>Local language</strong><span>English, Hindi and Marathi interface.</span></div>
+  <div><strong>Technical underneath</strong><span>Keep detailed model analysis for your project report.</span></div>
+</section>
+{% endblock %}

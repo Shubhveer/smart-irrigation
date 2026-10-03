@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block title %}Pest Guide — Farm Saathi{% endblock %}
+{% block content %}
+<section class="page-head"><div class="overline">CROP PROTECTION</div><h1>Check common pest symptoms</h1><p>Use visible signs to decide what to inspect next. Confirm the pest before using any pesticide.</p></section>
+<section class="two-col">
+<form class="work-panel" method="POST">
+  <label>Crop<select name="crop">{% for c in crops %}<option>{{c}}</option>{% endfor %}</select></label>
+  <label>What do you see?<select name="symptom">{% for s in symptoms %}<option value="{{s.key}}">{{s.name}}</option>{% endfor %}</select></label>
+  <label>Where is it visible?<select name="part"><option>Young leaves</option><option>Older leaves</option><option>Stem</option><option>Flowers</option><option>Fruit / pods</option><option>Whole plant</option></select></label>
+  <button class="btn btn-primary">Review pest signs</button>
+</form>
+<aside class="result-side">
+{% if result %}
+<div class="side-title">FIELD INSPECTION</div><h2>{{result.title}}</h2><p>{{result.summary}}</p><div class="advice-list">{% for x in result.actions %}<div>{{x}}</div>{% endfor %}</div><p class="small-note">{{result.note}}</p>
+{% else %}
+<div class="side-title">SAFE APPROACH</div><h2>Identify before treating.</h2><p>Inspect several plants, check both sides of leaves and note whether the damage is increasing. Avoid choosing a pesticide from a symptom name alone.</p>
+{% endif %}
+</aside>
+</section>
+{% endblock %}
