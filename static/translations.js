@@ -193,3 +193,136 @@ Object.assign(window.FARM_SAATHI_TRANSLATIONS.mr, {
     window.FARM_SAATHI_TRANSLATIONS[lang] = Object.assign(window.FARM_SAATHI_TRANSLATIONS[lang] || {}, fields[lang]);
   });
 })();
+
+/* Crop symptoms + Farm Plan translations */
+(function () {
+  const extra = {
+    en: {
+      'Leaves turning yellow': 'Leaves turning yellow',
+      'Brown or dark spots': 'Brown or dark spots',
+      'Leaves curling or distorted': 'Leaves curling or distorted',
+      'Plant wilting': 'Plant wilting',
+      'Holes or chewing damage': 'Holes or chewing damage',
+      'White powder or coating': 'White powder or coating',
+      'Slow or stunted growth': 'Slow or stunted growth',
+      'Visible insects': 'Visible insects',
+
+      'Today': 'Today',
+      'Check soil moisture': 'Check soil moisture',
+      'Inspect the root zone before starting irrigation.':
+        'Inspect the root zone before starting irrigation.',
+
+      'Inspect crop leaves': 'Inspect crop leaves',
+      'Look at healthy and affected plants from different parts of the field.':
+        'Look at healthy and affected plants from different parts of the field.',
+
+      'Tomorrow': 'Tomorrow',
+      'Review rainfall': 'Review rainfall',
+      'Adjust irrigation planning if meaningful rain is forecast.':
+        'Adjust irrigation planning if meaningful rain is forecast.',
+
+      'Within 3 days': 'Within 3 days',
+      'Review nutrient needs': 'Review nutrient needs',
+      'Use a soil test and crop stage before fertilizer application.':
+        'Use a soil test and crop stage before fertilizer application.',
+
+      'This week': 'This week',
+      'Record field activity': 'Record field activity',
+      'Save irrigation, fertilizer and crop-health observations.':
+        'Save irrigation, fertilizer and crop-health observations.',
+
+      'Weekly': 'Weekly',
+      'Walk the field': 'Walk the field',
+      'Look for new pest, disease, waterlogging or nutrient symptoms.':
+        'Look for new pest, disease, waterlogging or nutrient symptoms.'
+    },
+
+    hi: {
+      'Leaves turning yellow': 'पत्तियाँ पीली होना',
+      'Brown or dark spots': 'भूरे या गहरे धब्बे',
+      'Leaves curling or distorted': 'पत्तियों का मुड़ना या विकृत होना',
+      'Plant wilting': 'पौधे का मुरझाना',
+      'Holes or chewing damage': 'छेद या कुतरने से नुकसान',
+      'White powder or coating': 'सफेद पाउडर या परत',
+      'Slow or stunted growth': 'धीमी या रुकी हुई वृद्धि',
+      'Visible insects': 'दिखाई देने वाले कीड़े',
+
+      'Today': 'आज',
+      'Check soil moisture': 'मिट्टी की नमी जाँचें',
+      'Inspect the root zone before starting irrigation.':
+        'सिंचाई शुरू करने से पहले जड़ों वाले क्षेत्र की जाँच करें।',
+
+      'Inspect crop leaves': 'फसल की पत्तियों की जाँच करें',
+      'Look at healthy and affected plants from different parts of the field.':
+        'खेत के अलग-अलग हिस्सों में स्वस्थ और प्रभावित पौधों को देखें।',
+
+      'Tomorrow': 'कल',
+      'Review rainfall': 'वर्षा की समीक्षा करें',
+      'Adjust irrigation planning if meaningful rain is forecast.':
+        'यदि अच्छी बारिश का अनुमान है तो सिंचाई की योजना समायोजित करें।',
+
+      'Within 3 days': '3 दिनों के भीतर',
+      'Review nutrient needs': 'पोषक तत्वों की आवश्यकता की समीक्षा करें',
+      'Use a soil test and crop stage before fertilizer application.':
+        'उर्वरक डालने से पहले मिट्टी की जाँच और फसल की अवस्था को ध्यान में रखें।',
+
+      'This week': 'इस सप्ताह',
+      'Record field activity': 'खेत की गतिविधियों को दर्ज करें',
+      'Save irrigation, fertilizer and crop-health observations.':
+        'सिंचाई, उर्वरक और फसल स्वास्थ्य संबंधी जानकारी दर्ज करें।',
+
+      'Weekly': 'साप्ताहिक',
+      'Walk the field': 'खेत का निरीक्षण करें',
+      'Look for new pest, disease, waterlogging or nutrient symptoms.':
+        'नए कीट, रोग, जलभराव या पोषक तत्वों की कमी के लक्षण देखें।'
+    },
+
+    mr: {
+      'Leaves turning yellow': 'पाने पिवळी होणे',
+      'Brown or dark spots': 'तपकिरी किंवा काळे डाग',
+      'Leaves curling or distorted': 'पाने वाकडे होणे किंवा विकृत होणे',
+      'Plant wilting': 'झाड कोमेजणे',
+      'Holes or chewing damage': 'छिद्रे किंवा कुरतडल्यामुळे झालेले नुकसान',
+      'White powder or coating': 'पांढरी पावडरसारखी थर',
+      'Slow or stunted growth': 'मंद किंवा खुंटलेली वाढ',
+      'Visible insects': 'दिसणारे कीटक',
+
+      'Today': 'आज',
+      'Check soil moisture': 'मातीतील ओलावा तपासा',
+      'Inspect the root zone before starting irrigation.':
+        'सिंचन सुरू करण्यापूर्वी मुळांच्या परिसराची तपासणी करा.',
+
+      'Inspect crop leaves': 'पिकाच्या पानांची तपासणी करा',
+      'Look at healthy and affected plants from different parts of the field.':
+        'शेताच्या वेगवेगळ्या भागांतील निरोगी आणि बाधित झाडांचे निरीक्षण करा.',
+
+      'Tomorrow': 'उद्या',
+      'Review rainfall': 'पावसाचा आढावा घ्या',
+      'Adjust irrigation planning if meaningful rain is forecast.':
+        'चांगल्या पावसाचा अंदाज असल्यास सिंचनाचे नियोजन समायोजित करा.',
+
+      'Within 3 days': '३ दिवसांच्या आत',
+      'Review nutrient needs': 'पोषक तत्त्वांच्या गरजेचा आढावा घ्या',
+      'Use a soil test and crop stage before fertilizer application.':
+        'खत देण्यापूर्वी माती परीक्षण आणि पिकाची अवस्था लक्षात घ्या.',
+
+      'This week': 'या आठवड्यात',
+      'Record field activity': 'शेतातील कामांची नोंद करा',
+      'Save irrigation, fertilizer and crop-health observations.':
+        'सिंचन, खत आणि पिकाच्या आरोग्याशी संबंधित निरीक्षणांची नोंद करा.',
+
+      'Weekly': 'साप्ताहिक',
+      'Walk the field': 'शेताची पाहणी करा',
+      'Look for new pest, disease, waterlogging or nutrient symptoms.':
+        'नवीन कीड, रोग, पाणी साचणे किंवा पोषक तत्त्वांच्या कमतरतेची लक्षणे पहा.'
+    }
+  };
+
+  Object.keys(extra).forEach(function (lang) {
+    window.FARM_SAATHI_TRANSLATIONS[lang] = Object.assign(
+      window.FARM_SAATHI_TRANSLATIONS[lang] || {},
+      extra[lang]
+    );
+  });
+})();
+
