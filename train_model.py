@@ -12,7 +12,7 @@ from sklearn.ensemble import RandomForestClassifier
 ROOT=Path(__file__).resolve().parent
 DEFAULT_DATA=ROOT/"eda/data/raw/smart_agriculture_dataset.csv"
 MODEL_PATH=ROOT/"irrigation_model.pkl"
-FEATURES=["soil_type","Seedling Stage","MOI","temp","humidity"]; TARGET="result"
+FEATURES=["crop ID","soil_type","Seedling Stage","MOI","temp","humidity"]; TARGET="result"
 def load_data(path):
     if not path.exists(): raise FileNotFoundError(f"Dataset not found: {path}. Download the real Smart Agriculture Dataset from Kaggle and place it there.")
     df=pd.read_csv(path); required=FEATURES+[TARGET]; missing=[c for c in required if c not in df.columns]
@@ -24,7 +24,7 @@ def load_data(path):
     if unexpected: raise ValueError(f"Unexpected target values: {unexpected}")
     return df
 def build_pipeline():
-    cat=["soil_type","Seedling Stage"]; num=["MOI","temp","humidity"]
+    cat=["crop ID","soil_type","Seedling Stage"]; num=["MOI","temp","humidity"]
     prep=ColumnTransformer([("cat",Pipeline([("imputer",SimpleImputer(strategy="most_frequent")),("onehot",OneHotEncoder(handle_unknown="ignore"))]),cat),("num",Pipeline([("imputer",SimpleImputer(strategy="median")),("scale",StandardScaler())]),num)])
     return Pipeline([("preprocess",prep),("model",RandomForestClassifier(n_estimators=300,random_state=42,class_weight="balanced",n_jobs=-1))])
 def main():
@@ -32,7 +32,7 @@ def main():
     df=load_data(args.data); X,y=df[FEATURES],df[TARGET]
     X_train,X_test,y_train,y_test=train_test_split(X,y,test_size=.20,random_state=42,stratify=y)
     model=build_pipeline(); model.fit(X_train,y_train); pred=model.predict(X_test)
-    print(f"Rows after cleaning: {len(df)}"); print(y.value_counts().sort_index()); print(f"Accuracy: {accuracy_score(y_test,pred):.4f}"); print(f"Macro F1: {f1_score(y_test,pred,average="macro"):.4f}")
+    print(f"Rows after cleaning: {len(df)}"); print(y.value_counts().sort_index()); print(f"Accuracy: {accuracy_score(y_test,pred):.4f}"); print(f"Macro F1: {f1_score(y_test,pred,average='macro'):.4f}")
     print(classification_report(y_test,pred,zero_division=0)); print(confusion_matrix(y_test,pred))
     joblib.dump(model,MODEL_PATH); print(f"Saved REAL-DATA model to: {MODEL_PATH}")
 if __name__=="__main__": main()
