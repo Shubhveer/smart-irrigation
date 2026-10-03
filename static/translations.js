@@ -326,3 +326,144 @@ Object.assign(window.FARM_SAATHI_TRANSLATIONS.mr, {
   });
 })();
 
+(function () {
+  const extra = {
+    hi: {
+      'FIRST CHECK': 'पहले जाँच करें',
+      'More observation is needed': 'अधिक निरीक्षण की आवश्यकता है',
+      'The selected symptoms do not point to one reliable cause.':
+        'चयनित लक्षण किसी एक निश्चित कारण की ओर संकेत नहीं करते।',
+      'Photograph affected and healthy plants for comparison.':
+        'तुलना के लिए प्रभावित और स्वस्थ पौधों की तस्वीरें लें।',
+      'Check soil moisture and recent rainfall.':
+        'मिट्टी की नमी और हाल की वर्षा की जाँच करें।',
+      'Inspect both sides of leaves and the stem/root area.':
+        'पत्तियों के दोनों तरफ तथा तने और जड़ के क्षेत्र का निरीक्षण करें।',
+      'Repeat the observation after 24-48 hours if the problem is changing.':
+        'यदि समस्या में बदलाव हो रहा है, तो 24-48 घंटे बाद दोबारा निरीक्षण करें।',
+      'This is a symptom-screening aid, not a confirmed plant-disease diagnosis.':
+        'यह लक्षणों की प्रारंभिक जाँच में सहायता के लिए है, पौधों के रोग का पुष्ट निदान नहीं है।',
+
+      'Soil readings recorded': 'मिट्टी की जाँच के मान दर्ज किए गए हैं',
+      'The values can now be used as a baseline for field records.':
+        'अब इन मानों का उपयोग खेत के रिकॉर्ड के लिए आधार के रूप में किया जा सकता है।',
+      'Use the same units and test method when comparing readings over time.':
+        'समय के साथ रीडिंग की तुलना करते समय समान इकाइयों और जाँच विधि का उपयोग करें।',
+      'For fertilizer decisions, prefer a laboratory soil test or locally calibrated recommendation.':
+        'खाद संबंधी निर्णयों के लिए प्रयोगशाला में किए गए मिट्टी परीक्षण या स्थानीय रूप से निर्धारित सिफारिश को प्राथमिकता दें।',
+      'Combine soil information with crop, growth stage, previous crop and irrigation method.':
+        'मिट्टी की जानकारी को फसल, विकास अवस्था, पिछली फसल और सिंचाई विधि के साथ मिलाकर देखें।',
+      'Use a laboratory soil test for fertilizer decisions when possible.':
+        'जहाँ संभव हो, खाद संबंधी निर्णयों के लिए प्रयोगशाला में किए गए मिट्टी परीक्षण का उपयोग करें।',
+      'This page explains readings; it does not replace an agronomist"s recommendation.':
+        'यह पृष्ठ रीडिंग की जानकारी देता है; यह कृषि विशेषज्ञ की सिफारिश का विकल्प नहीं है।',
+
+      'Cotton nutrient planning': 'कपास के पोषक तत्त्वों की योजना',
+      'Stage: Before sowing. Main concern: General nutrient planning.':
+        'अवस्था: बुवाई से पहले। मुख्य चिंता: सामान्य पोषक तत्त्वों की योजना।',
+      'Use the soil-test recommendation as the starting point instead of a generic dose.':
+        'सामान्य मात्रा के बजाय मिट्टी परीक्षण की सिफारिश को आधार बनाएं।',
+      'Match nutrient timing to Cotton"s before sowing stage and local agronomic guidance.':
+        'पोषक तत्त्व देने का समय कपास की बुवाई-पूर्व अवस्था और स्थानीय कृषि मार्गदर्शन के अनुसार रखें।',
+      'Record the product, dose, date and field area after every application.':
+        'हर बार उपयोग के बाद उत्पाद, मात्रा, तारीख और खेत का क्षेत्रफल दर्ज करें।',
+
+      'Chewing damage': 'कुतरने से हुआ नुकसान',
+      'The symptom is a starting point for inspection, not proof of one pest.':
+        'यह लक्षण निरीक्षण की शुरुआत के लिए है, किसी एक कीट की पुष्टि नहीं करता।',
+      'Inspect leaves for larvae, beetles and fresh feeding edges.':
+        'पत्तियों पर लार्वा, भृंग और हाल ही में खाए गए किनारों की जाँच करें।',
+      'Check weeds and nearby plants for the same insect.':
+        'खरपतवार और आसपास के पौधों पर भी उसी कीट की जाँच करें।',
+      'Estimate the affected area before selecting a control.':
+        'नियंत्रण का उपाय चुनने से पहले प्रभावित क्षेत्र का अनुमान लगाएँ।',
+      'Follow the product label and local agricultural recommendations for any pesticide decision.':
+        'कीटनाशक संबंधी किसी भी निर्णय के लिए उत्पाद के लेबल और स्थानीय कृषि सिफारिशों का पालन करें।',
+
+      'WAIT TODAY': 'आज प्रतीक्षा करें',
+      'Watering is not indicated for today"s conditions.':
+        'आज की परिस्थितियों के अनुसार सिंचाई की आवश्यकता नहीं है।',
+      'If the soil is visibly dry, check the soil around the root zone before deciding.':
+        'यदि मिट्टी ऊपर से सूखी दिखाई दे, तो निर्णय लेने से पहले जड़ क्षेत्र के आसपास की मिट्टी की नमी जाँच लें।',
+      'Sunday': 'रविवार',
+      'No watering indicated': 'सिंचाई की आवश्यकता नहीं है',
+      'Monday': 'सोमवार',
+      'Tuesday': 'मंगलवार',
+      'Wednesday': 'बुधवार',
+      'Thursday': 'गुरुवार'
+    },
+
+    mr: {
+      'FIRST CHECK': 'प्रथम तपासा',
+      'More observation is needed': 'अधिक निरीक्षण आवश्यक आहे',
+      'The selected symptoms do not point to one reliable cause.':
+        'निवडलेली लक्षणे एका निश्चित कारणाकडे निर्देश करत नाहीत.',
+      'Photograph affected and healthy plants for comparison.':
+        'तुलनेसाठी बाधित आणि निरोगी झाडांचे फोटो घ्या.',
+      'Check soil moisture and recent rainfall.':
+        'मातीतील ओलावा आणि अलीकडील पावसाची तपासणी करा.',
+      'Inspect both sides of leaves and the stem/root area.':
+        'पानांच्या दोन्ही बाजू तसेच खोड आणि मुळांच्या परिसराची तपासणी करा.',
+      'Repeat the observation after 24-48 hours if the problem is changing.':
+        'समस्येत बदल होत असल्यास २४–४८ तासांनंतर पुन्हा निरीक्षण करा.',
+      'This is a symptom-screening aid, not a confirmed plant-disease diagnosis.':
+        'हे लक्षणांची प्राथमिक तपासणी करण्यासाठीचे साधन आहे; वनस्पती रोगाचे निश्चित निदान नाही.',
+
+      'Soil readings recorded': 'मातीतील मोजमाप नोंदवले आहेत',
+      'The values can now be used as a baseline for field records.':
+        'आता या मूल्यांचा शेतातील नोंदींसाठी आधार म्हणून वापर करता येईल.',
+      'Use the same units and test method when comparing readings over time.':
+        'वेगवेगळ्या वेळच्या मोजमापांची तुलना करताना समान एकके आणि तपासणी पद्धत वापरा.',
+      'For fertilizer decisions, prefer a laboratory soil test or locally calibrated recommendation.':
+        'खतासंबंधी निर्णयांसाठी प्रयोगशाळेतील माती परीक्षण किंवा स्थानिक परिस्थितीनुसार केलेल्या शिफारसीला प्राधान्य द्या.',
+      'Combine soil information with crop, growth stage, previous crop and irrigation method.':
+        'मातीची माहिती पिक, पिकाची वाढीची अवस्था, मागील पीक आणि सिंचन पद्धतीसोबत विचारात घ्या.',
+      'Use a laboratory soil test for fertilizer decisions when possible.':
+        'शक्य असल्यास खतासंबंधी निर्णयांसाठी प्रयोगशाळेतील माती परीक्षणाचा वापर करा.',
+      'This page explains readings; it does not replace an agronomist"s recommendation.':
+        'हे पृष्ठ मोजमापांची माहिती देते; ते कृषितज्ज्ञांच्या शिफारसीचा पर्याय नाही.',
+
+      'Cotton nutrient planning': 'कापूस पिकासाठी पोषक तत्त्वांचे नियोजन',
+      'Stage: Before sowing. Main concern: General nutrient planning.':
+        'अवस्था: पेरणीपूर्वी. मुख्य चिंता: सामान्य पोषक तत्त्वांचे नियोजन.',
+      'Use the soil-test recommendation as the starting point instead of a generic dose.':
+        'सामान्य खताच्या मात्रेऐवजी माती परीक्षणाच्या शिफारसीला आधार माना.',
+      'Match nutrient timing to Cotton"s before sowing stage and local agronomic guidance.':
+        'पोषक तत्त्वे देण्याची वेळ कापसाच्या पेरणीपूर्व अवस्थेनुसार आणि स्थानिक कृषी मार्गदर्शनानुसार ठरवा.',
+      'Record the product, dose, date and field area after every application.':
+        'प्रत्येक वापरानंतर उत्पादनाचे नाव, मात्रा, तारीख आणि शेताचे क्षेत्रफळ नोंदवा.',
+
+      'Chewing damage': 'कुरतडल्यामुळे झालेले नुकसान',
+      'The symptom is a starting point for inspection, not proof of one pest.':
+        'हे लक्षण तपासणीची सुरुवात करण्यासाठी आहे; एका विशिष्ट किडीची खात्री नाही.',
+      'Inspect leaves for larvae, beetles and fresh feeding edges.':
+        'पानांवर अळ्या, भुंगे आणि नुकतेच कुरतडलेले भाग तपासा.',
+      'Check weeds and nearby plants for the same insect.':
+        'तणांवर आणि आसपासच्या झाडांवरही त्याच किडीची तपासणी करा.',
+      'Estimate the affected area before selecting a control.':
+        'नियंत्रणाचा उपाय निवडण्यापूर्वी बाधित क्षेत्राचा अंदाज घ्या.',
+      'Follow the product label and local agricultural recommendations for any pesticide decision.':
+        'कीटकनाशकासंबंधी कोणताही निर्णय घेताना उत्पादनाच्या लेबलवरील सूचना आणि स्थानिक कृषी शिफारसींचे पालन करा.',
+
+      'WAIT TODAY': 'आज थांबा',
+      'Watering is not indicated for today"s conditions.':
+        'आजच्या परिस्थितीनुसार पाणी देण्याची आवश्यकता नाही.',
+      'If the soil is visibly dry, check the soil around the root zone before deciding.':
+        'माती वरून कोरडी दिसत असल्यास, निर्णय घेण्यापूर्वी मुळांच्या परिसरातील मातीचा ओलावा तपासा.',
+      'Sunday': 'रविवार',
+      'No watering indicated': 'पाणी देण्याची आवश्यकता नाही',
+      'Monday': 'सोमवार',
+      'Tuesday': 'मंगळवार',
+      'Wednesday': 'बुधवार',
+      'Thursday': 'गुरुवार'
+    }
+  };
+
+  Object.keys(extra).forEach(function (lang) {
+    window.FARM_SAATHI_TRANSLATIONS[lang] = Object.assign(
+      window.FARM_SAATHI_TRANSLATIONS[lang] || {},
+      extra[lang]
+    );
+  });
+})();
+
