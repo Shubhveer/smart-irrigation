@@ -1,0 +1,18 @@
+# Extra packages for EDA + model training (NOT needed on the Render server)
+# Install torch first using the command from https://pytorch.org/get-started/locally/
+# (pick "CPU", or your CUDA version if you have an NVIDIA GPU). Plain `pip install torch torchvision` gives the CPU build.
+torch
+torchvision
+onnx
+onnxruntime>=1.18
+kagglehub
+timm
+requests
+scikit-learn
+pandas
+numpy
+matplotlib
+seaborn
+pillow
+ipykernel
+jupyter

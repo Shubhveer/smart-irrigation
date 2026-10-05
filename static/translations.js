@@ -1,0 +1,501 @@
+window.FARM_SAATHI_TRANSLATIONS = {
+  en: {
+    'FARM SAATHI':'FARM SAATHI','Dashboard':'Dashboard','Crop Health':'Crop Health','Soil':'Soil','Fertilizer':'Fertilizer','Pest Guide':'Pest Guide','Farm Plan':'Farm Plan','Records':'Records','Government Agriculture News':'Government Agriculture News','Plant & Soil Image Check':'Plant & Soil Image Check','English':'English','Hindi':'हिन्दी','Marathi':'मराठी',
+    'Practical farm information. Always confirm chemical or fertilizer rates with a local agriculture professional and the product label.':'Practical farm information. Always confirm chemical or fertilizer rates with a local agriculture professional and the product label.',
+    'FARM MANAGEMENT':'FARM MANAGEMENT','Good day. What do you need to check?':'Good day. What do you need to check?','One place for water, crop health, soil, fertilizer, weather and farm planning.':'One place for water, crop health, soil, fertilizer, weather and farm planning.','FIELD LOCATION':'FIELD LOCATION','Change':'Change','LOCATION':'LOCATION','Nagpur, Maharashtra':'Nagpur, Maharashtra','STATUS':'STATUS','Weather connected':'Weather connected','USE':'USE','Check conditions before field work':'Check conditions before field work','TODAY':'TODAY','Farm decisions':'Farm decisions',
+    'Water Management':'Water Management','Check whether irrigation is needed today and see the next 7 days.':'Check whether irrigation is needed today and see the next 7 days.','Open water check':'Open water check','Crop Health':'Crop Health','Record crop symptoms and get a practical first-check guide.':'Record crop symptoms and get a practical first-check guide.','Open crop health':'Open crop health','Soil Check':'Soil Check','Review pH and nutrient readings and understand what they mean.':'Review pH and nutrient readings and understand what they mean.','Open soil check':'Open soil check','Fertilizer Guide':'Fertilizer Guide','Use crop, soil and growth stage to organize nutrient planning.':'Use crop, soil and growth stage to organize nutrient planning.','Open fertilizer guide':'Open fertilizer guide','Pest Guide':'Pest Guide','Check common crop symptoms and practical prevention steps.':'Check common crop symptoms and practical prevention steps.','Open pest guide':'Open pest guide','Farm Plan':'Farm Plan','Keep upcoming irrigation, inspection, nutrient and harvest tasks together.':'Keep upcoming irrigation, inspection, nutrient and harvest tasks together.','Open farm plan':'Open farm plan',
+    "Check today's irrigation":"Check today's irrigation",'Enter the basic field information already used by your current irrigation service.':'Enter the basic field information already used by your current irrigation service.','Field location':'Field location','Soil type':'Soil type','Sandy':'Sandy','Loamy':'Loamy','Clay':'Clay','Crop stage':'Crop stage','Newly planted':'Newly planted','Growing':'Growing','Flowering':'Flowering','Near harvest':'Near harvest','Field size':'Field size','Check irrigation':'Check irrigation','The irrigation result uses the existing weather and irrigation service in your project. It does not change your current prediction route.':'The irrigation result uses the existing weather and irrigation service in your project. It does not change your current prediction route.','Farmer first':'Farmer first','Plain language and practical actions.':'Plain language and practical actions.','Local language':'Local language','English, Hindi and Marathi interface.':'English, Hindi and Marathi interface.','Technical underneath':'Technical underneath','Keep detailed model analysis for your project report.':'Keep detailed model analysis for your project report.',
+    'CROP HEALTH':'CROP HEALTH','Check a crop problem':'Check a crop problem','Use the crop, growth stage and visible symptoms to create a first-check report.':'Use the crop, growth stage and visible symptoms to create a first-check report.','Crop':'Crop','Cotton':'Cotton','Soybean':'Soybean','Wheat':'Wheat','Sugarcane':'Sugarcane','Orange':'Orange','Vegetable crop':'Vegetable crop','Growth stage':'Growth stage','Early growth':'Early growth','Vegetative growth':'Vegetative growth','Fruit / pod development':'Fruit / pod development','What do you see?':'What do you see?','Select all that apply.':'Select all that apply.','Additional observation':'Additional observation','Prepare crop health report':'Prepare crop health report','FIELD CHECK':'FIELD CHECK','Start with what you can see.':'Start with what you can see.','Leaf colour, spots, curling, wilting, holes and visible insects are useful observations. A symptom screen is not a laboratory diagnosis.':'Leaf colour, spots, curling, wilting, holes and visible insects are useful observations. A symptom screen is not a laboratory diagnosis.',
+    'SOIL MANAGEMENT':'SOIL MANAGEMENT','Understand your soil readings':'Understand your soil readings','Enter values from a soil test or sensor. Leave a value blank if you do not have it.':'Enter values from a soil test or sensor. Leave a value blank if you do not have it.','Soil pH':'Soil pH','Nitrogen (N)':'Nitrogen (N)','Phosphorus (P)':'Phosphorus (P)','Potassium (K)':'Potassium (K)','Moisture %':'Moisture %','Review soil':'Review soil','SOIL SUMMARY':'SOIL SUMMARY','Use a laboratory soil test for fertilizer decisions when possible. This page explains readings; it does not replace an agronomist\'s recommendation.':'Use a laboratory soil test for fertilizer decisions when possible. This page explains readings; it does not replace an agronomist\'s recommendation.','WHAT TO ENTER':'WHAT TO ENTER','Soil test results become easier to understand here.':'Soil test results become easier to understand here.','pH describes acidity/alkalinity. N, P and K are major nutrients. Moisture is useful for irrigation decisions when measured consistently.':'pH describes acidity/alkalinity. N, P and K are major nutrients. Moisture is useful for irrigation decisions when measured consistently.',
+    'NUTRIENT PLANNING':'NUTRIENT PLANNING','Plan fertilizer use carefully':'Plan fertilizer use carefully','Use the crop and soil condition to organize questions for your fertilizer decision.':'Use the crop and soil condition to organize questions for your fertilizer decision.','Before sowing':'Before sowing','Soil test available?':'Soil test available?','Yes':'Yes','No':'No','Main concern':'Main concern','General nutrient planning':'General nutrient planning','Low nitrogen suspected':'Low nitrogen suspected','Low phosphorus suspected':'Low phosphorus suspected','Low potassium suspected':'Low potassium suspected','Crop growth is weak':'Crop growth is weak','Prepare nutrient plan':'Prepare nutrient plan','NUTRIENT PLAN':'NUTRIENT PLAN','IMPORTANT':'IMPORTANT','Fertilizer should follow the crop and soil test.':'Fertilizer should follow the crop and soil test.','Do not use a fixed dose for every field. The final rate depends on crop, yield target, soil test, previous crop, irrigation and local recommendations.':'Do not use a fixed dose for every field. The final rate depends on crop, yield target, soil test, previous crop, irrigation and local recommendations.',
+    'CROP PROTECTION':'CROP PROTECTION','Check common pest symptoms':'Check common pest symptoms','Use visible signs to decide what to inspect next. Confirm the pest before using any pesticide.':'Use visible signs to decide what to inspect next. Confirm the pest before using any pesticide.','Where is it visible?':'Where is it visible?','Young leaves':'Young leaves','Older leaves':'Older leaves','Stem':'Stem','Flowers':'Flowers','Fruit / pods':'Fruit / pods','Whole plant':'Whole plant','Review pest signs':'Review pest signs','FIELD INSPECTION':'FIELD INSPECTION','SAFE APPROACH':'SAFE APPROACH','Identify before treating.':'Identify before treating.','Inspect several plants, check both sides of leaves and note whether the damage is increasing. Avoid choosing a pesticide from a symptom name alone.':'Inspect several plants, check both sides of leaves and note whether the damage is increasing. Avoid choosing a pesticide from a symptom name alone.',
+    'FIELD WORK':'FIELD WORK','Plan the next few days':'Plan the next few days','A simple checklist for routine farm work. It is intentionally separate from technical model screens.':'A simple checklist for routine farm work. It is intentionally separate from technical model screens.','RECORD KEEPING':'RECORD KEEPING','Keep evidence of farm decisions':'Keep evidence of farm decisions','Record irrigation, fertilizer applications, disease observations, rainfall and harvest dates. These records make later decisions more reliable and are useful for your final project demonstration.':'Record irrigation, fertilizer applications, disease observations, rainfall and harvest dates. These records make later decisions more reliable and are useful for your final project demonstration.','Open irrigation records':'Open irrigation records',
+    'RECORDS':'RECORDS','Irrigation history':'Irrigation history','Previous irrigation checks saved by the application.':'Previous irrigation checks saved by the application.','Report':'Report','No records yet':'No records yet','Complete an irrigation check from the dashboard.':'Complete an irrigation check from the dashboard.','Start a check':'Start a check',
+    'WATER MANAGEMENT':'WATER MANAGEMENT',"Today's irrigation decision and the next seven days.":"Today's irrigation decision and the next seven days.",'litres':'litres','Temperature':'Temperature','Humidity':'Humidity','Rainfall':'Rainfall','Weather considerations':'Weather considerations','FIELD NOTES':'FIELD NOTES','Practical checks':'Practical checks','7-DAY OUTLOOK':'7-DAY OUTLOOK','Water planning':'Water planning','Download report':'Download report','Return to dashboard':'Return to dashboard'
+  },
+  hi: {}, mr: {}
+};
+Object.assign(window.FARM_SAATHI_TRANSLATIONS.hi, {
+  'Dashboard':'डैशबोर्ड','Crop Health':'फसल स्वास्थ्य','Soil':'मिट्टी','Fertilizer':'उर्वरक','Pest Guide':'कीट मार्गदर्शिका','Farm Plan':'खेत योजना','Records':'रिकॉर्ड','Government Agriculture News':'सरकारी कृषि समाचार','Plant & Soil Image Check':'पौधे और मिट्टी की फोटो जाँच','English':'English','Hindi':'हिन्दी','Marathi':'मराठी','Change':'बदलें','FARM MANAGEMENT':'खेत प्रबंधन','Good day. What do you need to check?':'नमस्कार। आज आपको क्या जाँचना है?','One place for water, crop health, soil, fertilizer, weather and farm planning.':'पानी, फसल स्वास्थ्य, मिट्टी, उर्वरक, मौसम और खेत योजना की जानकारी एक जगह।','FIELD LOCATION':'खेत का स्थान','LOCATION':'स्थान','Nagpur, Maharashtra':'नागपुर, महाराष्ट्र','STATUS':'स्थिति','Weather connected':'मौसम जुड़ा हुआ है','USE':'उपयोग','Check conditions before field work':'खेत में काम से पहले मौसम की स्थिति जाँचें','TODAY':'आज','Farm decisions':'खेत के निर्णय','Water Management':'जल प्रबंधन','Check whether irrigation is needed today and see the next 7 days.':'आज सिंचाई की जरूरत है या नहीं देखें और अगले 7 दिनों की जानकारी पाएँ।','Open water check':'जल जाँच खोलें','Record crop symptoms and get a practical first-check guide.':'फसल के लक्षण दर्ज करें और प्रारंभिक जाँच मार्गदर्शन पाएँ।','Open crop health':'फसल स्वास्थ्य खोलें','Soil Check':'मिट्टी जाँच','Review pH and nutrient readings and understand what they mean.':'pH और पोषक तत्वों की रीडिंग समझें।','Open soil check':'मिट्टी जाँच खोलें','Fertilizer Guide':'उर्वरक मार्गदर्शिका','Use crop, soil and growth stage to organize nutrient planning.':'फसल, मिट्टी और अवस्था के आधार पर पोषण योजना बनाएँ।','Open fertilizer guide':'उर्वरक मार्गदर्शिका खोलें','Pest Guide':'कीट मार्गदर्शिका','Check common crop symptoms and practical prevention steps.':'सामान्य कीट लक्षण और बचाव के उपाय देखें।','Open pest guide':'कीट मार्गदर्शिका खोलें','Farm Plan':'खेत योजना','Keep upcoming irrigation, inspection, nutrient and harvest tasks together.':'सिंचाई, निरीक्षण, पोषण और कटाई के आगामी काम एक जगह रखें।','Open farm plan':'खेत योजना खोलें',"Check today's irrigation":'आज की सिंचाई जाँचें','Enter the basic field information already used by your current irrigation service.':'अपने सिंचाई सिस्टम में उपयोग होने वाली खेत की मूल जानकारी भरें।','Field location':'खेत का स्थान','Soil type':'मिट्टी का प्रकार','Sandy':'रेतीली','Loamy':'दोमट','Clay':'चिकनी मिट्टी','Crop stage':'फसल अवस्था','Newly planted':'नई रोपाई','Growing':'बढ़वार','Flowering':'फूल अवस्था','Near harvest':'कटाई के पास','Field size':'खेत का क्षेत्रफल','Check irrigation':'सिंचाई जाँचें','Farmer first':'किसान पहले','Plain language and practical actions.':'सरल भाषा और व्यावहारिक कदम।','Local language':'स्थानीय भाषा','English, Hindi and Marathi interface.':'अंग्रेज़ी, हिंदी और मराठी इंटरफेस।','Technical underneath':'तकनीकी विवरण','Keep detailed model analysis for your project report.':'विस्तृत मॉडल विश्लेषण प्रोजेक्ट रिपोर्ट के लिए रखें।',
+  'CROP HEALTH':'फसल स्वास्थ्य','Check a crop problem':'फसल की समस्या जाँचें','Use the crop, growth stage and visible symptoms to create a first-check report.':'फसल, अवस्था और दिखाई देने वाले लक्षणों से प्रारंभिक जाँच रिपोर्ट बनाएँ।','Crop':'फसल','Cotton':'कपास','Soybean':'सोयाबीन','Wheat':'गेहूँ','Sugarcane':'गन्ना','Orange':'संतरा','Vegetable crop':'सब्जी फसल','Growth stage':'फसल अवस्था','Early growth':'प्रारंभिक बढ़वार','Vegetative growth':'वानस्पतिक बढ़वार','Fruit / pod development':'फल / फली विकास','What do you see?':'आपको क्या दिखाई दे रहा है?','Select all that apply.':'लागू सभी विकल्प चुनें।','Additional observation':'अतिरिक्त निरीक्षण','Prepare crop health report':'फसल स्वास्थ्य रिपोर्ट बनाएँ','FIELD CHECK':'खेत जाँच','Start with what you can see.':'जो दिखाई दे रहा है उससे शुरुआत करें।','Leaf colour, spots, curling, wilting, holes and visible insects are useful observations. A symptom screen is not a laboratory diagnosis.':'पत्तियों का रंग, धब्बे, मुड़ना, मुरझाना, छेद और दिखाई देने वाले कीट उपयोगी संकेत हैं। यह प्रयोगशाला निदान नहीं है।',
+  'SOIL MANAGEMENT':'मिट्टी प्रबंधन','Understand your soil readings':'मिट्टी की रीडिंग समझें','Enter values from a soil test or sensor. Leave a value blank if you do not have it.':'मिट्टी परीक्षण या सेंसर की रीडिंग भरें। उपलब्ध न होने पर खाली छोड़ें।','Soil pH':'मिट्टी का pH','Nitrogen (N)':'नाइट्रोजन (N)','Phosphorus (P)':'फॉस्फोरस (P)','Potassium (K)':'पोटैशियम (K)','Moisture %':'नमी %','Review soil':'मिट्टी जाँचें','SOIL SUMMARY':'मिट्टी सारांश','Use a laboratory soil test for fertilizer decisions when possible. This page explains readings; it does not replace an agronomist\'s recommendation.':'जहाँ संभव हो उर्वरक निर्णय के लिए प्रयोगशाला मिट्टी परीक्षण करें। यह पेज रीडिंग समझाता है; कृषि विशेषज्ञ की सलाह का विकल्प नहीं है।','WHAT TO ENTER':'क्या भरें','Soil test results become easier to understand here.':'मिट्टी परीक्षण के परिणाम यहाँ आसानी से समझें।','pH describes acidity/alkalinity. N, P and K are major nutrients. Moisture is useful for irrigation decisions when measured consistently.':'pH अम्लीयता/क्षारीयता बताता है। N, P और K प्रमुख पोषक तत्व हैं। नियमित रूप से मापी गई नमी सिंचाई निर्णय में उपयोगी है।',
+  'NUTRIENT PLANNING':'पोषण योजना','Plan fertilizer use carefully':'उर्वरक का उपयोग सावधानी से करें','Use the crop and soil condition to organize questions for your fertilizer decision.':'फसल और मिट्टी की स्थिति के आधार पर उर्वरक निर्णय की तैयारी करें।','Before sowing':'बुवाई से पहले','Soil test available?':'क्या मिट्टी परीक्षण उपलब्ध है?','Yes':'हाँ','No':'नहीं','Main concern':'मुख्य चिंता','General nutrient planning':'सामान्य पोषण योजना','Low nitrogen suspected':'नाइट्रोजन की कमी की संभावना','Low phosphorus suspected':'फॉस्फोरस की कमी की संभावना','Low potassium suspected':'पोटैशियम की कमी की संभावना','Crop growth is weak':'फसल की बढ़वार कमजोर है','Prepare nutrient plan':'पोषण योजना बनाएँ','NUTRIENT PLAN':'पोषण योजना','IMPORTANT':'महत्वपूर्ण','Fertilizer should follow the crop and soil test.':'उर्वरक का चुनाव फसल और मिट्टी परीक्षण के अनुसार होना चाहिए।','Do not use a fixed dose for every field. The final rate depends on crop, yield target, soil test, previous crop, irrigation and local recommendations.':'हर खेत के लिए एक ही मात्रा तय न करें। अंतिम मात्रा फसल, उत्पादन लक्ष्य, मिट्टी परीक्षण, पिछली फसल, सिंचाई और स्थानीय सलाह पर निर्भर करती है।',
+  'CROP PROTECTION':'फसल सुरक्षा','Check common pest symptoms':'सामान्य कीट लक्षण जाँचें','Use visible signs to decide what to inspect next. Confirm the pest before using any pesticide.':'दिखाई देने वाले संकेतों से अगली जाँच तय करें। किसी भी कीटनाशक से पहले कीट की पुष्टि करें।','Where is it visible?':'यह कहाँ दिखाई दे रहा है?','Young leaves':'नई पत्तियाँ','Older leaves':'पुरानी पत्तियाँ','Stem':'तना','Flowers':'फूल','Fruit / pods':'फल / फलियाँ','Whole plant':'पूरा पौधा','Review pest signs':'कीट संकेत जाँचें','FIELD INSPECTION':'खेत निरीक्षण','SAFE APPROACH':'सुरक्षित तरीका','Identify before treating.':'उपचार से पहले पहचान करें।','Inspect several plants, check both sides of leaves and note whether the damage is increasing. Avoid choosing a pesticide from a symptom name alone.':'कई पौधों का निरीक्षण करें, पत्तियों के दोनों तरफ देखें और नुकसान बढ़ रहा है या नहीं नोट करें। केवल लक्षण के नाम से कीटनाशक न चुनें।',
+  'FIELD WORK':'खेत कार्य','Plan the next few days':'अगले कुछ दिनों की योजना','A simple checklist for routine farm work. It is intentionally separate from technical model screens.':'नियमित खेत कार्यों की सरल सूची। इसे तकनीकी मॉडल स्क्रीन से अलग रखा गया है।','RECORD KEEPING':'रिकॉर्ड रखना','Keep evidence of farm decisions':'खेत के निर्णयों का रिकॉर्ड रखें','Record irrigation, fertilizer applications, disease observations, rainfall and harvest dates. These records make later decisions more reliable and are useful for your final project demonstration.':'सिंचाई, उर्वरक उपयोग, रोग निरीक्षण, वर्षा और कटाई की तारीखें दर्ज करें। ये रिकॉर्ड भविष्य के निर्णयों को अधिक विश्वसनीय बनाते हैं और प्रोजेक्ट प्रदर्शन में उपयोगी हैं।','Open irrigation records':'सिंचाई रिकॉर्ड खोलें','RECORDS':'रिकॉर्ड','Irrigation history':'सिंचाई इतिहास','Previous irrigation checks saved by the application.':'ऐप द्वारा सेव की गई पिछली सिंचाई जाँच।','Report':'रिपोर्ट','No records yet':'अभी कोई रिकॉर्ड नहीं','Complete an irrigation check from the dashboard.':'डैशबोर्ड से सिंचाई जाँच पूरी करें।','Start a check':'जाँच शुरू करें','WATER MANAGEMENT':'जल प्रबंधन',"Today's irrigation decision and the next seven days.":'आज का सिंचाई निर्णय और अगले सात दिन।','litres':'लीटर','Temperature':'तापमान','Humidity':'आर्द्रता','Rainfall':'वर्षा','Weather considerations':'मौसम संबंधी बातें','FIELD NOTES':'खेत नोट्स','Practical checks':'व्यावहारिक जाँच','7-DAY OUTLOOK':'7-दिन का पूर्वानुमान','Water planning':'जल योजना','Download report':'रिपोर्ट डाउनलोड करें','Return to dashboard':'डैशबोर्ड पर लौटें','Practical farm information. Always confirm chemical or fertilizer rates with a local agriculture professional and the product label.':'व्यावहारिक कृषि जानकारी। रसायन या उर्वरक की मात्रा हमेशा स्थानीय कृषि विशेषज्ञ और उत्पाद के लेबल से पुष्टि करें।'
+});
+Object.assign(window.FARM_SAATHI_TRANSLATIONS.mr, {
+  'Dashboard':'डॅशबोर्ड','Crop Health':'पीक आरोग्य','Soil':'माती','Fertilizer':'खत','Pest Guide':'किड व्यवस्थापन','Farm Plan':'शेत नियोजन','Records':'नोंदी','Government Agriculture News':'शासकीय कृषी बातम्या','Plant & Soil Image Check':'पिक व माती फोटो तपासणी','English':'English','Hindi':'हिन्दी','Marathi':'मराठी','Change':'बदला','FARM MANAGEMENT':'शेत व्यवस्थापन','Good day. What do you need to check?':'नमस्कार. आज तुम्हाला काय तपासायचे आहे?','One place for water, crop health, soil, fertilizer, weather and farm planning.':'पाणी, पीक आरोग्य, माती, खत, हवामान आणि शेत नियोजनाची माहिती एकाच ठिकाणी.','FIELD LOCATION':'शेताचे ठिकाण','LOCATION':'ठिकाण','Nagpur, Maharashtra':'नागपूर, महाराष्ट्र','STATUS':'स्थिती','Weather connected':'हवामान जोडलेले आहे','USE':'वापर','Check conditions before field work':'शेतकामापूर्वी हवामान तपासा','TODAY':'आज','Farm decisions':'शेत निर्णय','Water Management':'पाणी व्यवस्थापन','Check whether irrigation is needed today and see the next 7 days.':'आज सिंचनाची गरज आहे का ते तपासा आणि पुढील 7 दिवस पहा.','Open water check':'पाणी तपासणी उघडा','Record crop symptoms and get a practical first-check guide.':'पिकाची लक्षणे नोंदवा आणि प्राथमिक तपासणी मार्गदर्शन मिळवा.','Open crop health':'पीक आरोग्य उघडा','Soil Check':'माती तपासणी','Review pH and nutrient readings and understand what they mean.':'pH आणि पोषक घटकांची रीडिंग समजून घ्या.','Open soil check':'माती तपासणी उघडा','Fertilizer Guide':'खत मार्गदर्शक','Use crop, soil and growth stage to organize nutrient planning.':'पीक, माती आणि वाढीच्या अवस्थेनुसार पोषण नियोजन करा.','Open fertilizer guide':'खत मार्गदर्शक उघडा','Pest Guide':'किड व्यवस्थापन','Check common crop symptoms and practical prevention steps.':'सामान्य किडींची लक्षणे आणि प्रतिबंधक उपाय तपासा.','Open pest guide':'किड मार्गदर्शक उघडा','Farm Plan':'शेत नियोजन','Keep upcoming irrigation, inspection, nutrient and harvest tasks together.':'सिंचन, तपासणी, पोषण आणि कापणीची कामे एकत्र ठेवा.','Open farm plan':'शेत नियोजन उघडा',"Check today's irrigation":'आजचे सिंचन तपासा','Enter the basic field information already used by your current irrigation service.':'तुमच्या सिंचन सेवेत वापरली जाणारी मूलभूत शेत माहिती भरा.','Field location':'शेताचे ठिकाण','Soil type':'मातीचा प्रकार','Sandy':'वालुकामय','Loamy':'गाळाची / पोयट्याची','Clay':'चिकणमाती','Crop stage':'पिकाची अवस्था','Newly planted':'नुकतीच लागवड','Growing':'वाढीची अवस्था','Flowering':'फुलोरा','Near harvest':'कापणी जवळ','Field size':'शेताचे क्षेत्रफळ','Check irrigation':'सिंचन तपासा','Farmer first':'शेतकरी प्रथम','Plain language and practical actions.':'सोप्या भाषेत आणि व्यावहारिक कृती.','Local language':'स्थानिक भाषा','English, Hindi and Marathi interface.':'इंग्रजी, हिंदी आणि मराठी इंटरफेस.','Technical underneath':'तांत्रिक माहिती','Keep detailed model analysis for your project report.':'सविस्तर मॉडेल विश्लेषण प्रोजेक्ट रिपोर्टसाठी ठेवा',
+  'CROP HEALTH':'पीक आरोग्य','Check a crop problem':'पिकाची समस्या तपासा','Use the crop, growth stage and visible symptoms to create a first-check report.':'पीक, वाढीची अवस्था आणि दिसणाऱ्या लक्षणांवरून प्राथमिक तपासणी अहवाल तयार करा.','Crop':'पीक','Cotton':'कापूस','Soybean':'सोयाबीन','Wheat':'गहू','Sugarcane':'ऊस','Orange':'संत्रे','Vegetable crop':'भाजीपाला पीक','Growth stage':'वाढीची अवस्था','Early growth':'प्राथमिक वाढ','Vegetative growth':'पानांची/वनस्पती वाढ','Fruit / pod development':'फळ / शेंगा विकास','What do you see?':'तुम्हाला काय दिसते?','Select all that apply.':'लागू असलेले सर्व पर्याय निवडा.','Additional observation':'अतिरिक्त निरीक्षण','Prepare crop health report':'पीक आरोग्य अहवाल तयार करा','FIELD CHECK':'शेत तपासणी','Start with what you can see.':'जे दिसते त्यापासून सुरुवात करा.','Leaf colour, spots, curling, wilting, holes and visible insects are useful observations. A symptom screen is not a laboratory diagnosis.':'पानांचा रंग, डाग, वाकणे, कोमेजणे, छिद्रे आणि दिसणारे किडे हे उपयुक्त संकेत आहेत. ही प्रयोगशाळेतील निदान पद्धत नाही.',
+  'SOIL MANAGEMENT':'माती व्यवस्थापन','Understand your soil readings':'मातीची रीडिंग समजून घ्या','Enter values from a soil test or sensor. Leave a value blank if you do not have it.':'माती परीक्षण किंवा सेन्सरची रीडिंग भरा. उपलब्ध नसल्यास रिकामे ठेवा.','Soil pH':'मातीचा pH','Nitrogen (N)':'नायट्रोजन (N)','Phosphorus (P)':'फॉस्फरस (P)','Potassium (K)':'पोटॅशियम (K)','Moisture %':'ओलावा %','Review soil':'माती तपासा','SOIL SUMMARY':'माती सारांश','Use a laboratory soil test for fertilizer decisions when possible. This page explains readings; it does not replace an agronomist\'s recommendation.':'शक्य असल्यास खताच्या निर्णयासाठी प्रयोगशाळेतील माती परीक्षण वापरा. हे पान रीडिंग समजावते; कृषी तज्ज्ञांच्या सल्ल्याचा पर्याय नाही.','WHAT TO ENTER':'काय भरावे','Soil test results become easier to understand here.':'माती परीक्षणाचे परिणाम येथे समजणे सोपे आहे.','pH describes acidity/alkalinity. N, P and K are major nutrients. Moisture is useful for irrigation decisions when measured consistently.':'pH आम्लता/क्षारता दर्शवतो. N, P आणि K प्रमुख पोषक घटक आहेत. नियमितपणे मोजलेला ओलावा सिंचन निर्णयासाठी उपयुक्त आहे.',
+  'NUTRIENT PLANNING':'पोषण नियोजन','Plan fertilizer use carefully':'खताचा वापर काळजीपूर्वक करा','Use the crop and soil condition to organize questions for your fertilizer decision.':'पीक आणि मातीच्या स्थितीनुसार खताच्या निर्णयाची तयारी करा.','Before sowing':'पेरणीपूर्वी','Soil test available?':'माती परीक्षण उपलब्ध आहे का?','Yes':'होय','No':'नाही','Main concern':'मुख्य चिंता','General nutrient planning':'सामान्य पोषण नियोजन','Low nitrogen suspected':'नायट्रोजन कमतरतेची शक्यता','Low phosphorus suspected':'फॉस्फरस कमतरतेची शक्यता','Low potassium suspected':'पोटॅशियम कमतरतेची शक्यता','Crop growth is weak':'पिकाची वाढ कमकुवत आहे','Prepare nutrient plan':'पोषण योजना तयार करा','NUTRIENT PLAN':'पोषण योजना','IMPORTANT':'महत्त्वाचे','Fertilizer should follow the crop and soil test.':'खताची निवड पीक आणि माती परीक्षणानुसार करावी.','Do not use a fixed dose for every field. The final rate depends on crop, yield target, soil test, previous crop, irrigation and local recommendations.':'प्रत्येक शेतासाठी एकच मात्रा वापरू नका. अंतिम मात्रा पीक, उत्पादन लक्ष्य, माती परीक्षण, मागील पीक, सिंचन आणि स्थानिक शिफारशींवर अवलंबून असते.',
+  'CROP PROTECTION':'पीक संरक्षण','Check common pest symptoms':'सामान्य किडींची लक्षणे तपासा','Use visible signs to decide what to inspect next. Confirm the pest before using any pesticide.':'दिसणाऱ्या संकेतांवरून पुढील तपासणी ठरवा. कीटकनाशक वापरण्यापूर्वी किडीची खात्री करा.','Where is it visible?':'ते कुठे दिसते?','Young leaves':'नवीन पाने','Older leaves':'जुनी पाने','Stem':'खोड','Flowers':'फुले','Fruit / pods':'फळे / शेंगा','Whole plant':'संपूर्ण रोप','Review pest signs':'किडीचे संकेत तपासा','FIELD INSPECTION':'शेत निरीक्षण','SAFE APPROACH':'सुरक्षित पद्धत','Identify before treating.':'उपचारापूर्वी ओळख निश्चित करा.','Inspect several plants, check both sides of leaves and note whether the damage is increasing. Avoid choosing a pesticide from a symptom name alone.':'अनेक रोपांची तपासणी करा, पानांच्या दोन्ही बाजू पहा आणि नुकसान वाढत आहे का ते नोंदवा. फक्त लक्षणाच्या नावावरून कीटकनाशक निवडू नका.',
+  'FIELD WORK':'शेतकाम','Plan the next few days':'पुढील काही दिवसांचे नियोजन','A simple checklist for routine farm work. It is intentionally separate from technical model screens.':'नियमित शेतकामासाठी सोपी यादी. ती तांत्रिक मॉडेल स्क्रीनपासून वेगळी ठेवली आहे.','RECORD KEEPING':'नोंद ठेवणे','Keep evidence of farm decisions':'शेत निर्णयांच्या नोंदी ठेवा','Record irrigation, fertilizer applications, disease observations, rainfall and harvest dates. These records make later decisions more reliable and are useful for your final project demonstration.':'सिंचन, खत वापर, रोग निरीक्षण, पाऊस आणि कापणीच्या तारखा नोंदवा. या नोंदी पुढील निर्णय अधिक विश्वासार्ह बनवतात आणि प्रोजेक्टच्या सादरीकरणासाठी उपयुक्त आहेत.','Open irrigation records':'सिंचन नोंदी उघडा','RECORDS':'नोंदी','Irrigation history':'सिंचन इतिहास','Previous irrigation checks saved by the application.':'अॅपमध्ये जतन केलेल्या मागील सिंचन तपासण्या.','Report':'अहवाल','No records yet':'अजून नोंदी नाहीत','Complete an irrigation check from the dashboard.':'डॅशबोर्डवरून सिंचन तपासणी पूर्ण करा.','Start a check':'तपासणी सुरू करा','WATER MANAGEMENT':'पाणी व्यवस्थापन',"Today's irrigation decision and the next seven days.":'आजचा सिंचन निर्णय आणि पुढील सात दिवस.','litres':'लिटर','Temperature':'तापमान','Humidity':'आर्द्रता','Rainfall':'पाऊस','Weather considerations':'हवामान विचार','FIELD NOTES':'शेत नोंदी','Practical checks':'व्यावहारिक तपासण्या','7-DAY OUTLOOK':'7 दिवसांचा अंदाज','Water planning':'पाणी नियोजन','Download report':'अहवाल डाउनलोड करा','Return to dashboard':'डॅशबोर्डवर परत जा','Practical farm information. Always confirm chemical or fertilizer rates with a local agriculture professional and the product label.':'व्यावहारिक कृषी माहिती. रसायने किंवा खतांची मात्रा स्थानिक कृषी तज्ज्ञ आणि उत्पादनाच्या लेबलवरून नेहमी तपासा.'
+});
+
+/* Complete translations for Government News + Plant/Soil Image Check pages. */
+(function () {
+  const extra = {
+    en: {
+      'Farm Saathi — Government Agriculture News':'Farm Saathi — Government Agriculture News',
+      'Farm Saathi — Plant & Soil Image Check':'Farm Saathi — Plant & Soil Image Check',
+      'GOVERNMENT INFORMATION':'GOVERNMENT INFORMATION',
+      'Latest official agriculture sources':'Latest official agriculture sources',
+      'Open official Government of India and Maharashtra agriculture portals for schemes, advisories, notifications and agriculture updates.':'Open official Government of India and Maharashtra agriculture portals for schemes, advisories, notifications and agriculture updates.',
+      'OFFICIAL SOURCES':'OFFICIAL SOURCES',
+      'Government agriculture updates':'Government agriculture updates',
+      'OFFICIAL':'OFFICIAL',
+      'Press Information Bureau (PIB) — Agriculture updates':'Press Information Bureau (PIB) — Agriculture updates',
+      'Ministry of Agriculture & Farmers Welfare':'Ministry of Agriculture & Farmers Welfare',
+      'Indian Council of Agricultural Research (ICAR)':'Indian Council of Agricultural Research (ICAR)',
+      'Maharashtra Agriculture Department':'Maharashtra Agriculture Department',
+      'Government of India':'Government of India',
+      'Government of Maharashtra':'Government of Maharashtra',
+      'Read official update':'Read official update',
+      'These links open official portals. The dashboard does not present an automatically verified list of the newest headlines.':'These links open official portals. The dashboard does not present an automatically verified list of the newest headlines.',
+      'IMAGE CHECK':'IMAGE CHECK',
+      'Upload a plant or soil JPG':'Upload a plant or soil JPG',
+      'Get a preliminary visual screening from a field photograph. This is not a confirmed disease diagnosis or laboratory soil analysis.':'Get a preliminary visual screening from a field photograph. This is not a confirmed disease diagnosis or laboratory soil analysis.',
+      'Analysis type':'Analysis type',
+      'Plant photo':'Plant photo',
+      'Soil surface photo':'Soil surface photo',
+      'Choose JPG image':'Choose JPG image',
+      'Analyze image':'Analyze image',
+      'Use a clear JPG/JPEG photo with good lighting. For plant disease confirmation, use a validated crop-specific model or expert/lab assessment.':'Use a clear JPG/JPEG photo with good lighting. For plant disease confirmation, use a validated crop-specific model or expert/lab assessment.',
+      'Finding':'Finding',
+      'Recommendation':'Recommendation',
+      'Please choose a JPG image.':'Please choose a JPG image.',
+      'Only JPG/JPEG images are accepted.':'Only JPG/JPEG images are accepted.',
+      'The image could not be processed. Please use a valid JPG/JPEG file.':'The image could not be processed. Please use a valid JPG/JPEG file.',
+      'Healthy-looking green vegetation':'Healthy-looking green vegetation',
+      'Possible yellowing pattern':'Possible yellowing pattern',
+      'Possible dry or damaged area':'Possible dry or damaged area',
+      'No clear visual pattern':'No clear visual pattern',
+      'Dark soil appearance':'Dark soil appearance',
+      'Light soil appearance':'Light soil appearance',
+      'Mixed soil appearance':'Mixed soil appearance',
+      ' with visible variation':' with visible variation',
+      'Use this only as a preliminary visual screen. A confirmed disease diagnosis needs a validated crop-specific model or expert/lab confirmation.':'Use this only as a preliminary visual screen. A confirmed disease diagnosis needs a validated crop-specific model or expert/lab confirmation.',
+      'A soil photo cannot reliably determine pH, N-P-K, moisture or fertilizer dose. Use a laboratory soil test or calibrated sensor for those decisions.':'A soil photo cannot reliably determine pH, N-P-K, moisture or fertilizer dose. Use a laboratory soil test or calibrated sensor for those decisions.'
+    },
+    hi: {
+      'Farm Saathi — Government Agriculture News':'फार्म साथी — सरकारी कृषि समाचार',
+      'Farm Saathi — Plant & Soil Image Check':'फार्म साथी — पौधा और मिट्टी फोटो जांच',
+      'GOVERNMENT INFORMATION':'सरकारी जानकारी',
+      'Latest official agriculture sources':'नवीनतम आधिकारिक कृषि स्रोत',
+      'Open official Government of India and Maharashtra agriculture portals for schemes, advisories, notifications and agriculture updates.':'योजनाओं, कृषि सलाह, सूचनाओं और कृषि अपडेट के लिए भारत सरकार और महाराष्ट्र सरकार के आधिकारिक कृषि पोर्टल खोलें।',
+      'OFFICIAL SOURCES':'आधिकारिक स्रोत',
+      'Government agriculture updates':'सरकारी कृषि अपडेट',
+      'OFFICIAL':'आधिकारिक',
+      'Press Information Bureau (PIB) — Agriculture updates':'प्रेस सूचना ब्यूरो (PIB) — कृषि अपडेट',
+      'Ministry of Agriculture & Farmers Welfare':'कृषि एवं किसान कल्याण मंत्रालय',
+      'Indian Council of Agricultural Research (ICAR)':'भारतीय कृषि अनुसंधान परिषद (ICAR)',
+      'Maharashtra Agriculture Department':'महाराष्ट्र कृषि विभाग',
+      'Government of India':'भारत सरकार',
+      'Government of Maharashtra':'महाराष्ट्र सरकार',
+      'Read official update':'आधिकारिक अपडेट पढ़ें',
+      'These links open official portals. The dashboard does not present an automatically verified list of the newest headlines.':'ये लिंक आधिकारिक पोर्टल खोलते हैं। डैशबोर्ड नवीनतम सुर्खियों की स्वचालित रूप से सत्यापित सूची प्रस्तुत नहीं करता है।',
+      'IMAGE CHECK':'फोटो जांच',
+      'Upload a plant or soil JPG':'पौधे या मिट्टी की JPG फोटो अपलोड करें',
+      'Get a preliminary visual screening from a field photograph. This is not a confirmed disease diagnosis or laboratory soil analysis.':'खेत की फोटो से प्रारंभिक दृश्य जांच प्राप्त करें। यह पक्की रोग पहचान या प्रयोगशाला मृदा जांच नहीं है।',
+      'Analysis type':'जांच का प्रकार',
+      'Plant photo':'पौधे की फोटो',
+      'Soil surface photo':'मिट्टी की सतह की फोटो',
+      'Choose JPG image':'JPG फोटो चुनें',
+      'Analyze image':'फोटो की जांच करें',
+      'Use a clear JPG/JPEG photo with good lighting. For plant disease confirmation, use a validated crop-specific model or expert/lab assessment.':'अच्छी रोशनी में साफ JPG/JPEG फोटो लें। पौधे के रोग की पुष्टि के लिए मान्य फसल-विशिष्ट मॉडल या विशेषज्ञ/प्रयोगशाला जांच का उपयोग करें।',
+      'Finding':'निष्कर्ष',
+      'Recommendation':'सिफारिश',
+      'Please choose a JPG image.':'कृपया JPG फोटो चुनें।',
+      'Only JPG/JPEG images are accepted.':'केवल JPG/JPEG फोटो स्वीकार की जाती हैं।',
+      'The image could not be processed. Please use a valid JPG/JPEG file.':'फोटो की जांच नहीं हो सकी। कृपया सही JPG/JPEG फाइल का उपयोग करें।',
+      'Healthy-looking green vegetation':'स्वस्थ दिखाई देने वाली हरी वनस्पति',
+      'Possible yellowing pattern':'पीलेपन का संभावित संकेत',
+      'Possible dry or damaged area':'सूखे या क्षतिग्रस्त क्षेत्र का संभावित संकेत',
+      'No clear visual pattern':'कोई स्पष्ट दृश्य संकेत नहीं',
+      'Dark soil appearance':'गहरी मिट्टी जैसी दिखाई देती है',
+      'Light soil appearance':'हल्की मिट्टी जैसी दिखाई देती है',
+      'Mixed soil appearance':'मिश्रित मिट्टी जैसी दिखाई देती है',
+      ' with visible variation':' और दिखाई देने वाली विविधता के साथ',
+      'Use this only as a preliminary visual screen. A confirmed disease diagnosis needs a validated crop-specific model or expert/lab confirmation.':'इसे केवल प्रारंभिक दृश्य जांच मानें। रोग की पुष्टि के लिए मान्य फसल-विशिष्ट मॉडल या विशेषज्ञ/प्रयोगशाला जांच आवश्यक है।',
+      'A soil photo cannot reliably determine pH, N-P-K, moisture or fertilizer dose. Use a laboratory soil test or calibrated sensor for those decisions.':'केवल मिट्टी की फोटो से pH, N-P-K, नमी या उर्वरक मात्रा विश्वसनीय रूप से निर्धारित नहीं की जा सकती। इन निर्णयों के लिए प्रयोगशाला मृदा परीक्षण या कैलिब्रेटेड सेंसर का उपयोग करें।'
+    },
+    mr: {
+      'Farm Saathi — Government Agriculture News':'फार्म साथी — सरकारी कृषी बातम्या',
+      'Farm Saathi — Plant & Soil Image Check':'फार्म साथी — पीक व माती फोटो तपासणी',
+      'GOVERNMENT INFORMATION':'शासकीय माहिती',
+      'Latest official agriculture sources':'नवीनतम अधिकृत कृषी स्रोत',
+      'Open official Government of India and Maharashtra agriculture portals for schemes, advisories, notifications and agriculture updates.':'योजना, कृषी सल्ले, सूचना आणि कृषी अपडेट्ससाठी भारत सरकार व महाराष्ट्र सरकारची अधिकृत कृषी संकेतस्थळे उघडा.',
+      'OFFICIAL SOURCES':'अधिकृत स्रोत',
+      'Government agriculture updates':'शासकीय कृषी अपडेट्स',
+      'OFFICIAL':'अधिकृत',
+      'Press Information Bureau (PIB) — Agriculture updates':'प्रेस इन्फॉर्मेशन ब्युरो (PIB) — कृषी अपडेट्स',
+      'Ministry of Agriculture & Farmers Welfare':'कृषी व शेतकरी कल्याण मंत्रालय',
+      'Indian Council of Agricultural Research (ICAR)':'भारतीय कृषी संशोधन परिषद (ICAR)',
+      'Maharashtra Agriculture Department':'महाराष्ट्र कृषी विभाग',
+      'Government of India':'भारत सरकार',
+      'Government of Maharashtra':'महाराष्ट्र सरकार',
+      'Read official update':'अधिकृत अपडेट वाचा',
+      'These links open official portals. The dashboard does not present an automatically verified list of the newest headlines.':'हे दुवे अधिकृत संकेतस्थळे उघडतात. डॅशबोर्ड नवीनतम बातम्यांची स्वयंचलित पडताळलेली यादी दाखवत नाही.',
+      'IMAGE CHECK':'फोटो तपासणी',
+      'Upload a plant or soil JPG':'पीक किंवा मातीची JPG फोटो अपलोड करा',
+      'Get a preliminary visual screening from a field photograph. This is not a confirmed disease diagnosis or laboratory soil analysis.':'शेतातील फोटोवरून प्राथमिक दृश्य तपासणी मिळवा. हे निश्चित रोग निदान किंवा प्रयोगशाळेतील माती परीक्षण नाही.',
+      'Analysis type':'तपासणीचा प्रकार',
+      'Plant photo':'पिकाचा फोटो',
+      'Soil surface photo':'मातीच्या पृष्ठभागाचा फोटो',
+      'Choose JPG image':'JPG फोटो निवडा',
+      'Analyze image':'फोटो तपासा',
+      'Use a clear JPG/JPEG photo with good lighting. For plant disease confirmation, use a validated crop-specific model or expert/lab assessment.':'चांगल्या प्रकाशात स्पष्ट JPG/JPEG फोटो वापरा. पिकाच्या रोगाची खात्री करण्यासाठी प्रमाणित पीक-विशिष्ट मॉडेल किंवा तज्ज्ञ/प्रयोगशाळा तपासणी वापरा.',
+      'Finding':'निष्कर्ष',
+      'Recommendation':'शिफारस',
+      'Please choose a JPG image.':'कृपया JPG फोटो निवडा.',
+      'Only JPG/JPEG images are accepted.':'फक्त JPG/JPEG फोटो स्वीकारले जातात.',
+      'The image could not be processed. Please use a valid JPG/JPEG file.':'फोटोवर प्रक्रिया करता आली नाही. कृपया वैध JPG/JPEG फाइल वापरा.',
+      'Healthy-looking green vegetation':'निरोगी दिसणारी हिरवी वनस्पती',
+      'Possible yellowing pattern':'पिवळेपणाचा संभाव्य संकेत',
+      'Possible dry or damaged area':'कोरडा किंवा खराब झालेला भाग असण्याची शक्यता',
+      'No clear visual pattern':'कोणताही स्पष्ट दृश्य संकेत नाही',
+      'Dark soil appearance':'गडद मातीसारखे स्वरूप',
+      'Light soil appearance':'फिकट मातीसारखे स्वरूप',
+      'Mixed soil appearance':'मिश्र मातीसारखे स्वरूप',
+      ' with visible variation':' आणि दिसणारी विविधता',
+      'Use this only as a preliminary visual screen. A confirmed disease diagnosis needs a validated crop-specific model or expert/lab confirmation.':'याचा वापर फक्त प्राथमिक दृश्य तपासणी म्हणून करा. रोगाची खात्री करण्यासाठी प्रमाणित पीक-विशिष्ट मॉडेल किंवा तज्ज्ञ/प्रयोगशाळा तपासणी आवश्यक आहे.',
+      'A soil photo cannot reliably determine pH, N-P-K, moisture or fertilizer dose. Use a laboratory soil test or calibrated sensor for those decisions.':'फक्त मातीच्या फोटोवरून pH, N-P-K, ओलावा किंवा खताची मात्रा विश्वसनीयपणे ठरवता येत नाही. त्यासाठी प्रयोगशाळेतील माती परीक्षण किंवा कॅलिब्रेटेड सेन्सर वापरा.'
+    }
+  };
+  Object.keys(extra).forEach(function(lang){
+    window.FARM_SAATHI_TRANSLATIONS[lang] = Object.assign(window.FARM_SAATHI_TRANSLATIONS[lang] || {}, extra[lang]);
+  });
+})();
+
+/* Remaining form placeholders / field text. */
+(function () {
+  const fields = {
+    en: {
+      'Nagpur':'Nagpur',
+      'Example: 6.8':'Example: 6.8',
+      'mg/kg':'mg/kg',
+      'For example: problem started after rainfall, lower leaves affected, insects visible...':'For example: problem started after rainfall, lower leaves affected, insects visible...'
+    },
+    hi: {
+      'Nagpur':'नागपुर',
+      'Example: 6.8':'उदाहरण: 6.8',
+      'mg/kg':'मि.ग्रा./किग्रा.',
+      'For example: problem started after rainfall, lower leaves affected, insects visible...':'उदाहरण: बारिश के बाद समस्या शुरू हुई, नीचे की पत्तियाँ प्रभावित हैं, कीड़े दिखाई दे रहे हैं...'
+    },
+    mr: {
+      'Nagpur':'नागपूर',
+      'Example: 6.8':'उदाहरण: 6.8',
+      'mg/kg':'मि.ग्रॅ./कि.ग्रॅ.',
+      'For example: problem started after rainfall, lower leaves affected, insects visible...':'उदाहरण: पावसानंतर समस्या सुरू झाली, खालची पाने प्रभावित आहेत, किडे दिसत आहेत...'
+    }
+  };
+  Object.keys(fields).forEach(function(lang){
+    window.FARM_SAATHI_TRANSLATIONS[lang] = Object.assign(window.FARM_SAATHI_TRANSLATIONS[lang] || {}, fields[lang]);
+  });
+})();
+
+/* Crop symptoms + Farm Plan translations */
+(function () {
+  const extra = {
+    en: {
+      'Leaves turning yellow': 'Leaves turning yellow',
+      'Brown or dark spots': 'Brown or dark spots',
+      'Leaves curling or distorted': 'Leaves curling or distorted',
+      'Plant wilting': 'Plant wilting',
+      'Holes or chewing damage': 'Holes or chewing damage',
+      'White powder or coating': 'White powder or coating',
+      'Slow or stunted growth': 'Slow or stunted growth',
+      'Visible insects': 'Visible insects',
+
+      'Today': 'Today',
+      'Check soil moisture': 'Check soil moisture',
+      'Inspect the root zone before starting irrigation.':
+        'Inspect the root zone before starting irrigation.',
+
+      'Inspect crop leaves': 'Inspect crop leaves',
+      'Look at healthy and affected plants from different parts of the field.':
+        'Look at healthy and affected plants from different parts of the field.',
+
+      'Tomorrow': 'Tomorrow',
+      'Review rainfall': 'Review rainfall',
+      'Adjust irrigation planning if meaningful rain is forecast.':
+        'Adjust irrigation planning if meaningful rain is forecast.',
+
+      'Within 3 days': 'Within 3 days',
+      'Review nutrient needs': 'Review nutrient needs',
+      'Use a soil test and crop stage before fertilizer application.':
+        'Use a soil test and crop stage before fertilizer application.',
+
+      'This week': 'This week',
+      'Record field activity': 'Record field activity',
+      'Save irrigation, fertilizer and crop-health observations.':
+        'Save irrigation, fertilizer and crop-health observations.',
+
+      'Weekly': 'Weekly',
+      'Walk the field': 'Walk the field',
+      'Look for new pest, disease, waterlogging or nutrient symptoms.':
+        'Look for new pest, disease, waterlogging or nutrient symptoms.'
+    },
+
+    hi: {
+      'Leaves turning yellow': 'पत्तियाँ पीली होना',
+      'Brown or dark spots': 'भूरे या गहरे धब्बे',
+      'Leaves curling or distorted': 'पत्तियों का मुड़ना या विकृत होना',
+      'Plant wilting': 'पौधे का मुरझाना',
+      'Holes or chewing damage': 'छेद या कुतरने से नुकसान',
+      'White powder or coating': 'सफेद पाउडर या परत',
+      'Slow or stunted growth': 'धीमी या रुकी हुई वृद्धि',
+      'Visible insects': 'दिखाई देने वाले कीड़े',
+
+      'Today': 'आज',
+      'Check soil moisture': 'मिट्टी की नमी जाँचें',
+      'Inspect the root zone before starting irrigation.':
+        'सिंचाई शुरू करने से पहले जड़ों वाले क्षेत्र की जाँच करें।',
+
+      'Inspect crop leaves': 'फसल की पत्तियों की जाँच करें',
+      'Look at healthy and affected plants from different parts of the field.':
+        'खेत के अलग-अलग हिस्सों में स्वस्थ और प्रभावित पौधों को देखें।',
+
+      'Tomorrow': 'कल',
+      'Review rainfall': 'वर्षा की समीक्षा करें',
+      'Adjust irrigation planning if meaningful rain is forecast.':
+        'यदि अच्छी बारिश का अनुमान है तो सिंचाई की योजना समायोजित करें।',
+
+      'Within 3 days': '3 दिनों के भीतर',
+      'Review nutrient needs': 'पोषक तत्वों की आवश्यकता की समीक्षा करें',
+      'Use a soil test and crop stage before fertilizer application.':
+        'उर्वरक डालने से पहले मिट्टी की जाँच और फसल की अवस्था को ध्यान में रखें।',
+
+      'This week': 'इस सप्ताह',
+      'Record field activity': 'खेत की गतिविधियों को दर्ज करें',
+      'Save irrigation, fertilizer and crop-health observations.':
+        'सिंचाई, उर्वरक और फसल स्वास्थ्य संबंधी जानकारी दर्ज करें।',
+
+      'Weekly': 'साप्ताहिक',
+      'Walk the field': 'खेत का निरीक्षण करें',
+      'Look for new pest, disease, waterlogging or nutrient symptoms.':
+        'नए कीट, रोग, जलभराव या पोषक तत्वों की कमी के लक्षण देखें।'
+    },
+
+    mr: {
+      'Leaves turning yellow': 'पाने पिवळी होणे',
+      'Brown or dark spots': 'तपकिरी किंवा काळे डाग',
+      'Leaves curling or distorted': 'पाने वाकडे होणे किंवा विकृत होणे',
+      'Plant wilting': 'झाड कोमेजणे',
+      'Holes or chewing damage': 'छिद्रे किंवा कुरतडल्यामुळे झालेले नुकसान',
+      'White powder or coating': 'पांढरी पावडरसारखी थर',
+      'Slow or stunted growth': 'मंद किंवा खुंटलेली वाढ',
+      'Visible insects': 'दिसणारे कीटक',
+
+      'Today': 'आज',
+      'Check soil moisture': 'मातीतील ओलावा तपासा',
+      'Inspect the root zone before starting irrigation.':
+        'सिंचन सुरू करण्यापूर्वी मुळांच्या परिसराची तपासणी करा.',
+
+      'Inspect crop leaves': 'पिकाच्या पानांची तपासणी करा',
+      'Look at healthy and affected plants from different parts of the field.':
+        'शेताच्या वेगवेगळ्या भागांतील निरोगी आणि बाधित झाडांचे निरीक्षण करा.',
+
+      'Tomorrow': 'उद्या',
+      'Review rainfall': 'पावसाचा आढावा घ्या',
+      'Adjust irrigation planning if meaningful rain is forecast.':
+        'चांगल्या पावसाचा अंदाज असल्यास सिंचनाचे नियोजन समायोजित करा.',
+
+      'Within 3 days': '३ दिवसांच्या आत',
+      'Review nutrient needs': 'पोषक तत्त्वांच्या गरजेचा आढावा घ्या',
+      'Use a soil test and crop stage before fertilizer application.':
+        'खत देण्यापूर्वी माती परीक्षण आणि पिकाची अवस्था लक्षात घ्या.',
+
+      'This week': 'या आठवड्यात',
+      'Record field activity': 'शेतातील कामांची नोंद करा',
+      'Save irrigation, fertilizer and crop-health observations.':
+        'सिंचन, खत आणि पिकाच्या आरोग्याशी संबंधित निरीक्षणांची नोंद करा.',
+
+      'Weekly': 'साप्ताहिक',
+      'Walk the field': 'शेताची पाहणी करा',
+      'Look for new pest, disease, waterlogging or nutrient symptoms.':
+        'नवीन कीड, रोग, पाणी साचणे किंवा पोषक तत्त्वांच्या कमतरतेची लक्षणे पहा.'
+    }
+  };
+
+  Object.keys(extra).forEach(function (lang) {
+    window.FARM_SAATHI_TRANSLATIONS[lang] = Object.assign(
+      window.FARM_SAATHI_TRANSLATIONS[lang] || {},
+      extra[lang]
+    );
+  });
+})();
+
+(function () {
+  const extra = {
+    hi: {
+      'FIRST CHECK': 'पहले जाँच करें',
+      'More observation is needed': 'अधिक निरीक्षण की आवश्यकता है',
+      'The selected symptoms do not point to one reliable cause.':
+        'चयनित लक्षण किसी एक निश्चित कारण की ओर संकेत नहीं करते।',
+      'Photograph affected and healthy plants for comparison.':
+        'तुलना के लिए प्रभावित और स्वस्थ पौधों की तस्वीरें लें।',
+      'Check soil moisture and recent rainfall.':
+        'मिट्टी की नमी और हाल की वर्षा की जाँच करें।',
+      'Inspect both sides of leaves and the stem/root area.':
+        'पत्तियों के दोनों तरफ तथा तने और जड़ के क्षेत्र का निरीक्षण करें।',
+      'Repeat the observation after 24-48 hours if the problem is changing.':
+        'यदि समस्या में बदलाव हो रहा है, तो 24-48 घंटे बाद दोबारा निरीक्षण करें।',
+      'This is a symptom-screening aid, not a confirmed plant-disease diagnosis.':
+        'यह लक्षणों की प्रारंभिक जाँच में सहायता के लिए है, पौधों के रोग का पुष्ट निदान नहीं है।',
+
+      'Soil readings recorded': 'मिट्टी की जाँच के मान दर्ज किए गए हैं',
+      'The values can now be used as a baseline for field records.':
+        'अब इन मानों का उपयोग खेत के रिकॉर्ड के लिए आधार के रूप में किया जा सकता है।',
+      'Use the same units and test method when comparing readings over time.':
+        'समय के साथ रीडिंग की तुलना करते समय समान इकाइयों और जाँच विधि का उपयोग करें।',
+      'For fertilizer decisions, prefer a laboratory soil test or locally calibrated recommendation.':
+        'खाद संबंधी निर्णयों के लिए प्रयोगशाला में किए गए मिट्टी परीक्षण या स्थानीय रूप से निर्धारित सिफारिश को प्राथमिकता दें।',
+      'Combine soil information with crop, growth stage, previous crop and irrigation method.':
+        'मिट्टी की जानकारी को फसल, विकास अवस्था, पिछली फसल और सिंचाई विधि के साथ मिलाकर देखें।',
+      'Use a laboratory soil test for fertilizer decisions when possible.':
+        'जहाँ संभव हो, खाद संबंधी निर्णयों के लिए प्रयोगशाला में किए गए मिट्टी परीक्षण का उपयोग करें।',
+      'This page explains readings; it does not replace an agronomist"s recommendation.':
+        'यह पृष्ठ रीडिंग की जानकारी देता है; यह कृषि विशेषज्ञ की सिफारिश का विकल्प नहीं है।',
+
+      'Cotton nutrient planning': 'कपास के पोषक तत्त्वों की योजना',
+      'Stage: Before sowing. Main concern: General nutrient planning.':
+        'अवस्था: बुवाई से पहले। मुख्य चिंता: सामान्य पोषक तत्त्वों की योजना।',
+      'Use the soil-test recommendation as the starting point instead of a generic dose.':
+        'सामान्य मात्रा के बजाय मिट्टी परीक्षण की सिफारिश को आधार बनाएं।',
+      'Match nutrient timing to Cotton"s before sowing stage and local agronomic guidance.':
+        'पोषक तत्त्व देने का समय कपास की बुवाई-पूर्व अवस्था और स्थानीय कृषि मार्गदर्शन के अनुसार रखें।',
+      'Record the product, dose, date and field area after every application.':
+        'हर बार उपयोग के बाद उत्पाद, मात्रा, तारीख और खेत का क्षेत्रफल दर्ज करें।',
+
+      'Before sowing': 'बुवाई से पहले',
+      'Main concern': 'मुख्य चिंता',
+      'General nutrient planning': 'सामान्य पोषण योजना',
+
+      'Use soil test recommendations instead of a general rate.':
+      'सामान्य मात्रा के बजाय मिट्टी परीक्षण की सिफारिशों को आधार बनाएं।',
+
+      'Match nutrient timing to the crop stage and local agronomic guidance.':
+      'पोषक तत्व देने का समय फसल की अवस्था और स्थानीय कृषि सलाह के अनुसार रखें।',
+
+      'After every application, record the product, amount, date, and field area.':
+      'हर बार उपयोग के बाद उत्पाद, मात्रा, तारीख और खेत का क्षेत्रफल दर्ज करें।',
+
+      'Cotton': 'कपास',
+
+
+      'Chewing damage': 'कुतरने से हुआ नुकसान',
+      'The symptom is a starting point for inspection, not proof of one pest.':
+        'यह लक्षण निरीक्षण की शुरुआत के लिए है, किसी एक कीट की पुष्टि नहीं करता।',
+      'Inspect leaves for larvae, beetles and fresh feeding edges.':
+        'पत्तियों पर लार्वा, भृंग और हाल ही में खाए गए किनारों की जाँच करें।',
+      'Check weeds and nearby plants for the same insect.':
+        'खरपतवार और आसपास के पौधों पर भी उसी कीट की जाँच करें।',
+      'Estimate the affected area before selecting a control.':
+        'नियंत्रण का उपाय चुनने से पहले प्रभावित क्षेत्र का अनुमान लगाएँ।',
+      'Follow the product label and local agricultural recommendations for any pesticide decision.':
+        'कीटनाशक संबंधी किसी भी निर्णय के लिए उत्पाद के लेबल और स्थानीय कृषि सिफारिशों का पालन करें।',
+
+      'WAIT TODAY': 'आज प्रतीक्षा करें',
+      'Watering is not indicated for today"s conditions.':
+        'आज की परिस्थितियों के अनुसार सिंचाई की आवश्यकता नहीं है।',
+      'If the soil is visibly dry, check the soil around the root zone before deciding.':
+        'यदि मिट्टी ऊपर से सूखी दिखाई दे, तो निर्णय लेने से पहले जड़ क्षेत्र के आसपास की मिट्टी की नमी जाँच लें।',
+      'Sunday': 'रविवार',
+      'No watering indicated': 'सिंचाई की आवश्यकता नहीं है',
+      'Monday': 'सोमवार',
+      'Tuesday': 'मंगलवार',
+      'Wednesday': 'बुधवार',
+      'Thursday': 'गुरुवार'
+    },
+
+    mr: {
+      'FIRST CHECK': 'प्रथम तपासा',
+      'More observation is needed': 'अधिक निरीक्षण आवश्यक आहे',
+      'The selected symptoms do not point to one reliable cause.':
+        'निवडलेली लक्षणे एका निश्चित कारणाकडे निर्देश करत नाहीत.',
+      'Photograph affected and healthy plants for comparison.':
+        'तुलनेसाठी बाधित आणि निरोगी झाडांचे फोटो घ्या.',
+      'Check soil moisture and recent rainfall.':
+        'मातीतील ओलावा आणि अलीकडील पावसाची तपासणी करा.',
+      'Inspect both sides of leaves and the stem/root area.':
+        'पानांच्या दोन्ही बाजू तसेच खोड आणि मुळांच्या परिसराची तपासणी करा.',
+      'Repeat the observation after 24-48 hours if the problem is changing.':
+        'समस्येत बदल होत असल्यास २४–४८ तासांनंतर पुन्हा निरीक्षण करा.',
+      'This is a symptom-screening aid, not a confirmed plant-disease diagnosis.':
+        'हे लक्षणांची प्राथमिक तपासणी करण्यासाठीचे साधन आहे; वनस्पती रोगाचे निश्चित निदान नाही.',
+
+      'Soil readings recorded': 'मातीतील मोजमाप नोंदवले आहेत',
+      'The values can now be used as a baseline for field records.':
+        'आता या मूल्यांचा शेतातील नोंदींसाठी आधार म्हणून वापर करता येईल.',
+      'Use the same units and test method when comparing readings over time.':
+        'वेगवेगळ्या वेळच्या मोजमापांची तुलना करताना समान एकके आणि तपासणी पद्धत वापरा.',
+      'For fertilizer decisions, prefer a laboratory soil test or locally calibrated recommendation.':
+        'खतासंबंधी निर्णयांसाठी प्रयोगशाळेतील माती परीक्षण किंवा स्थानिक परिस्थितीनुसार केलेल्या शिफारसीला प्राधान्य द्या.',
+      'Combine soil information with crop, growth stage, previous crop and irrigation method.':
+        'मातीची माहिती पिक, पिकाची वाढीची अवस्था, मागील पीक आणि सिंचन पद्धतीसोबत विचारात घ्या.',
+      'Use a laboratory soil test for fertilizer decisions when possible.':
+        'शक्य असल्यास खतासंबंधी निर्णयांसाठी प्रयोगशाळेतील माती परीक्षणाचा वापर करा.',
+      'This page explains readings; it does not replace an agronomist"s recommendation.':
+        'हे पृष्ठ मोजमापांची माहिती देते; ते कृषितज्ज्ञांच्या शिफारसीचा पर्याय नाही.',
+
+      'Cotton nutrient planning': 'कापूस पिकासाठी पोषक तत्त्वांचे नियोजन',
+      'Stage: Before sowing. Main concern: General nutrient planning.':
+        'अवस्था: पेरणीपूर्वी. मुख्य चिंता: सामान्य पोषक तत्त्वांचे नियोजन.',
+      'Use the soil-test recommendation as the starting point instead of a generic dose.':
+        'सामान्य खताच्या मात्रेऐवजी माती परीक्षणाच्या शिफारसीला आधार माना.',
+      'Match nutrient timing to Cotton"s before sowing stage and local agronomic guidance.':
+        'पोषक तत्त्वे देण्याची वेळ कापसाच्या पेरणीपूर्व अवस्थेनुसार आणि स्थानिक कृषी मार्गदर्शनानुसार ठरवा.',
+      'Record the product, dose, date and field area after every application.':
+        'प्रत्येक वापरानंतर उत्पादनाचे नाव, मात्रा, तारीख आणि शेताचे क्षेत्रफळ नोंदवा.',
+
+      'Before sowing': 'पेरणीपूर्वी',
+      'Main concern': 'मुख्य चिंता',
+      'General nutrient planning': 'सामान्य पोषण नियोजन',
+
+      'Use soil test recommendations instead of a general rate.':
+      'सामान्य मात्रेऐवजी माती परीक्षणाच्या शिफारशींना आधार मानावा.',
+
+      'Match nutrient timing to the crop stage and local agronomic guidance.':
+      'पोषक तत्त्व देण्याची वेळ पिकाची अवस्था आणि स्थानिक कृषी मार्गदर्शनानुसार ठरवावी.',
+
+      'After every application, record the product, amount, date, and field area.':
+      'प्रत्येक वापरानंतर उत्पादनाचे नाव, मात्रा, तारीख आणि शेताचे क्षेत्रफळ नोंदवा.',
+
+      'Cotton': 'कापूस',
+
+
+      'Chewing damage': 'कुरतडल्यामुळे झालेले नुकसान',
+      'The symptom is a starting point for inspection, not proof of one pest.':
+        'हे लक्षण तपासणीची सुरुवात करण्यासाठी आहे; एका विशिष्ट किडीची खात्री नाही.',
+      'Inspect leaves for larvae, beetles and fresh feeding edges.':
+        'पानांवर अळ्या, भुंगे आणि नुकतेच कुरतडलेले भाग तपासा.',
+      'Check weeds and nearby plants for the same insect.':
+        'तणांवर आणि आसपासच्या झाडांवरही त्याच किडीची तपासणी करा.',
+      'Estimate the affected area before selecting a control.':
+        'नियंत्रणाचा उपाय निवडण्यापूर्वी बाधित क्षेत्राचा अंदाज घ्या.',
+      'Follow the product label and local agricultural recommendations for any pesticide decision.':
+        'कीटकनाशकासंबंधी कोणताही निर्णय घेताना उत्पादनाच्या लेबलवरील सूचना आणि स्थानिक कृषी शिफारसींचे पालन करा.',
+
+      'WAIT TODAY': 'आज थांबा',
+      'Watering is not indicated for today"s conditions.':
+        'आजच्या परिस्थितीनुसार पाणी देण्याची आवश्यकता नाही.',
+      'If the soil is visibly dry, check the soil around the root zone before deciding.':
+        'माती वरून कोरडी दिसत असल्यास, निर्णय घेण्यापूर्वी मुळांच्या परिसरातील मातीचा ओलावा तपासा.',
+      'Sunday': 'रविवार',
+      'No watering indicated': 'पाणी देण्याची आवश्यकता नाही',
+      'Monday': 'सोमवार',
+      'Tuesday': 'मंगळवार',
+      'Wednesday': 'बुधवार',
+      'Thursday': 'गुरुवार'
+    }
+  };
+
+  Object.keys(extra).forEach(function (lang) {
+    window.FARM_SAATHI_TRANSLATIONS[lang] = Object.assign(
+      window.FARM_SAATHI_TRANSLATIONS[lang] || {},
+      extra[lang]
+    );
+  });
+})();
+

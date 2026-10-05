@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="{{ lang }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}{{ _("Farm Saathi") }}{% endblock %}</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+Devanagari:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='farm_saathi.css') }}">
+</head>
+<body data-language="{{ lang }}">
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="wordmark" href="{{ url_for('predict.index') }}">{{ _("FARM SAATHI") }}</a>
+    <nav class="nav">
+      <a href="{{ url_for('predict.index') }}" class="{% if request.endpoint == 'predict.index' %}active{% endif %}">{{ _("Dashboard") }}</a>
+      <a href="{{ url_for('farm.crop_health') }}" class="{% if request.endpoint == 'farm.crop_health' %}active{% endif %}">{{ _("Crop Health") }}</a>
+      <a href="{{ url_for('farm.soil') }}" class="{% if request.endpoint == 'farm.soil' %}active{% endif %}">{{ _("Soil") }}</a>
+      <a href="{{ url_for('farm.fertilizer') }}" class="{% if request.endpoint == 'farm.fertilizer' %}active{% endif %}">{{ _("Fertilizer") }}</a>
+      <a href="{{ url_for('farm.pest') }}" class="{% if request.endpoint == 'farm.pest' %}active{% endif %}">{{ _("Pest Guide") }}</a>
+      <a href="{{ url_for('farm.farm_plan') }}" class="{% if request.endpoint == 'farm.farm_plan' %}active{% endif %}">{{ _("Farm Plan") }}</a>
+      <a href="{{ url_for('predict.history') }}">{{ _("Records") }}</a>
+      <a href="{{ url_for('farmer_extra.government_news') }}">{{ _("Government Agriculture News") }}</a>
+      <a href="{{ url_for('farmer_extra.image_check') }}">{{ _("Plant & Soil Image Check") }}</a>
+    </nav>
+    <div class="language" role="group" aria-label="{{ _('Language') }}">
+      {% for code, label in LANGS.items() %}<a class="lang-btn{% if code == lang %} active{% endif %}" href="{{ url_for('i18n.set_language', code=code, next=current_url) }}" lang="{{ code }}" hreflang="{{ code }}"{% if code == lang %} aria-current="true"{% endif %}>{{ label }}</a>{% endfor %}
+    </div>
+  </div>
+</header>
+
+{% with messages = get_flashed_messages() %}
+{% if messages %}
+<div class="flash-wrap">{% for message in messages %}<div class="flash">{{ message|t }}</div>{% endfor %}</div>
+{% endif %}
+{% endwith %}
+
+<main class="shell">{% block content %}{% endblock %}</main>
+
+<footer class="footer">
+  <div>{{ _("FARM SAATHI") }}</div>
+  <p>{{ _("Practical farm information. Always confirm chemical or fertilizer rates with a local agriculture professional and the product label.") }}</p>
+</footer>
+{% block scripts %}{% endblock %}
+</body>
+</html>

@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block title %}{{ _("Crop Health — Farm Saathi") }}{% endblock %}
+{% block content %}
+<section class="page-head"><div class="overline">{{ _("CROP HEALTH") }}</div><h1>{{ _("Check a crop problem") }}</h1><p>{{ _("Use the crop, growth stage and visible symptoms to create a first-check report.") }}</p></section>
+<section class="two-col">
+  <form class="work-panel" method="POST">
+    <label>{{ _("Crop") }}<select name="crop">{% for c in ["Cotton", "Soybean", "Wheat", "Sugarcane", "Orange", "Vegetable crop"] %}<option value="{{ c }}">{{ c|t }}</option>{% endfor %}</select></label>
+    <label>{{ _("Growth stage") }}<select name="stage">{% for c in ["Early growth", "Vegetative growth", "Flowering", "Fruit / pod development", "Near harvest"] %}<option value="{{ c }}">{{ c|t }}</option>{% endfor %}</select></label>
+    <label>{{ _("What do you see?") }} <span class="muted">{{ _("Select all that apply.") }}</span></label>
+    <div class="check-grid">
+      {% for s in symptoms %}
+      <label class="check"><input type="checkbox" name="symptoms" value="{{ s.key }}"><span>{{ s.name|t }}</span></label>
+      {% endfor %}
+    </div>
+    <label>{{ _("Additional observation") }}<textarea name="notes" placeholder="{{ _('For example: problem started after rainfall, lower leaves affected, insects visible...') }}"></textarea></label>
+    <button class="btn btn-primary">{{ _("Prepare crop health report") }}</button>
+  </form>
+  <aside class="result-side">
+    <div class="side-title">{{ _("FIELD CHECK") }}</div>
+    {% if result %}
+      <div class="result-status">{{ result.status|t }}</div>
+      <h2>{{ result.title|t }}</h2>
+      <p>{{ result.description|t }}</p>
+      <div class="advice-list">{% for x in result.actions %}<div>{{ x|t }}</div>{% endfor %}</div>
+      <p class="small-note">{{ result.note|t }}</p>
+    {% else %}
+      <h2>{{ _("Start with what you can see.") }}</h2>
+      <p>{{ _("Leaf colour, spots, curling, wilting, holes and visible insects are useful observations. A symptom screen is not a laboratory diagnosis.") }}</p>
+    {% endif %}
+  </aside>
+</section>
+{% endblock %}

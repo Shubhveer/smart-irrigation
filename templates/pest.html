@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block title %}{{ _("Pest Guide — Farm Saathi") }}{% endblock %}
+{% block content %}
+<section class="page-head"><div class="overline">{{ _("CROP PROTECTION") }}</div><h1>{{ _("Check common pest symptoms") }}</h1><p>{{ _("Use visible signs to decide what to inspect next. Confirm the pest before using any pesticide.") }}</p></section>
+<section class="two-col">
+<form class="work-panel" method="POST">
+  <label>{{ _("Crop") }}<select name="crop">{% for c in crops %}<option value="{{ c }}">{{ c|t }}</option>{% endfor %}</select></label>
+  <label>{{ _("What do you see?") }}<select name="symptom">{% for s in symptoms %}<option value="{{ s.key }}">{{ s.name|t }}</option>{% endfor %}</select></label>
+  <label>{{ _("Where is it visible?") }}<select name="part">{% for c in ["Young leaves", "Older leaves", "Stem", "Flowers", "Fruit / pods", "Whole plant"] %}<option value="{{ c }}">{{ c|t }}</option>{% endfor %}</select></label>
+  <button class="btn btn-primary">{{ _("Review pest signs") }}</button>
+</form>
+<aside class="result-side">
+{% if result %}
+<div class="side-title">{{ _("FIELD INSPECTION") }}</div><h2>{{ result.title|t }}</h2><p>{{ result.summary|t }}</p><div class="advice-list">{% for x in result.actions %}<div>{{ x|t }}</div>{% endfor %}</div><p class="small-note">{{ result.note|t }}</p>
+{% else %}
+<div class="side-title">{{ _("SAFE APPROACH") }}</div><h2>{{ _("Identify before treating.") }}</h2><p>{{ _("Inspect several plants, check both sides of leaves and note whether the damage is increasing. Avoid choosing a pesticide from a symptom name alone.") }}</p>
+{% endif %}
+</aside>
+</section>
+{% endblock %}

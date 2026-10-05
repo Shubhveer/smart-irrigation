@@ -1,0 +1,16 @@
+.env
+.venv/
+venv/
+
+__pycache__/
+*.pyc
+*.db
+
+generated_reports/
+.vscode/
+
+data/
+eda_output/
+
+*.pt
+.ipynb_checkpoints/

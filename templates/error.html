@@ -1,0 +1,5 @@
+{% extends "base.html" %}
+{% block title %}{{ title|t }} — {{ _("Farm Saathi") }}{% endblock %}
+{% block content %}
+<section class="work-panel empty"><h2>{{ title|t }}</h2><p>{{ message|t }}</p><a class="btn btn-primary" href="{{ url_for('predict.index') }}">{{ _("Return to dashboard") }}</a></section>
+{% endblock %}

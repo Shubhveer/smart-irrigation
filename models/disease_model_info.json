@@ -1,0 +1,43 @@
+{
+  "backbone": "mobilenetv3_large_100",
+  "per_class": 600,
+  "images_used": 20923,
+  "train": 16738,
+  "val": 2092,
+  "test": 2093,
+  "test_accuracy": 0.9756330625895844,
+  "test_macro_f1": 0.9756241738988415,
+  "best_C": 0.5,
+  "grayscale_stress_accuracy": 0.56,
+  "colour_accuracy_same_images": 0.9733333333333334,
+  "confidence_tradeoff": [
+    {
+      "threshold": 0.5,
+      "coverage": 0.9942666029622551,
+      "accuracy_when_answered": 0.9788563190773667
+    },
+    {
+      "threshold": 0.6,
+      "coverage": 0.9880554228380315,
+      "accuracy_when_answered": 0.9821083172147002
+    },
+    {
+      "threshold": 0.7,
+      "coverage": 0.9784997611084567,
+      "accuracy_when_answered": 0.98583984375
+    },
+    {
+      "threshold": 0.8,
+      "coverage": 0.9646440516005733,
+      "accuracy_when_answered": 0.9881129271916791
+    },
+    {
+      "threshold": 0.9,
+      "coverage": 0.9436215957955089,
+      "accuracy_when_answered": 0.9929113924050633
+    }
+  ],
+  "onnx_agreement": 1.0,
+  "size_mb": 17.0,
+  "train_minutes": 7.3
+}

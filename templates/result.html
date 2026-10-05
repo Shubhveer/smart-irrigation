@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block title %}{{ _("Irrigation Result — Farm Saathi") }}{% endblock %}
+{% block content %}
+<section class="page-head"><div class="overline">{{ _("WATER MANAGEMENT") }}</div><h1>{{ location }}</h1><p>{{ _("Today's irrigation decision and the next seven days.") }}</p></section>
+<section class="decision {% if irrigation_needed %}decision-water{% else %}decision-wait{% endif %}">
+  <div class="decision-label">{% if irrigation_needed %}{{ _("WATER TODAY") }}{% else %}{{ _("WAIT TODAY") }}{% endif %}</div>
+  <h2>{% if irrigation_needed %}{{ _("Watering is recommended for today's conditions.") }}{% else %}{{ _("Watering is not indicated for today's conditions.") }}{% endif %}</h2>
+  {% if irrigation_needed %}<div class="litres">{{ water_needed }} <span>{{ _("litres") }}</span></div>{% endif %}
+  <p>{% if irrigation_needed %}{{ _("Prefer early morning or evening. Check soil condition before starting the full field.") }}{% else %}{{ _("If the soil is visibly dry, check the soil around the root zone before deciding.") }}{% endif %}</p>
+</section>
+<div class="metric-row"><div><span>{{ _("Temperature") }}</span><strong>{{ temperature }}°C</strong></div><div><span>{{ _("Humidity") }}</span><strong>{{ humidity }}%</strong></div><div><span>{{ _("Rainfall") }}</span><strong>{{ rainfall }} {{ _("mm") }}</strong></div></div>
+{% if alert_messages %}<section class="notice"><strong>{{ _("Weather considerations") }}</strong>{% for a in alert_messages %}<p>{{ a|t }}</p>{% endfor %}</section>{% endif %}
+{% if recommendation_messages %}<section class="work-panel"><div class="overline">{{ _("FIELD NOTES") }}</div><h2>{{ _("Practical checks") }}</h2><div class="advice-list">{% for r in recommendation_messages %}<div>{{ r|t }}</div>{% endfor %}</div></section>{% endif %}
+<section class="work-panel"><div class="overline">{{ _("7-DAY OUTLOOK") }}</div><h2>{{ _("Water planning") }}</h2><div class="week-table">{% for d in week_prediction %}<div><strong>{{ d.day|t }}</strong><span>{% if 'Required' in d.irrigation %}{{ _("Water") }}{% else %}{{ _("No watering indicated") }}{% endif %}</span><b>{% if 'Required' in d.irrigation %}{{ d.water }} {{ _("L") }}{% else %}—{% endif %}</b></div>{% endfor %}</div></section>
+<div class="action-row"><a class="btn btn-primary" href="{{ url_for('predict.download', prediction_id=prediction_id) }}">{{ _("Download report") }}</a><a class="btn btn-secondary" href="{{ url_for('predict.index') }}">{{ _("Return to dashboard") }}</a></div>
+{% endblock %}

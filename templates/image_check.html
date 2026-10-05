@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block title %}{{ _("Farm Saathi — Plant & Soil Image Check") }}{% endblock %}
+{% block content %}
+<section class="dashboard-head"><div><div class="overline">{{ _("IMAGE CHECK") }}</div><h1>{{ _("Upload a plant or soil JPG") }}</h1><p class="lead">{{ _("Get a preliminary visual screening from a field photograph. This is not a confirmed disease diagnosis or laboratory soil analysis.") }}</p></div></section>
+<section class="work-panel"><form method="POST" enctype="multipart/form-data" class="form-grid">
+<label>{{ _("Analysis type") }}<select name="mode"><option value="plant">{{ _("Plant photo") }}</option><option value="soil">{{ _("Soil surface photo") }}</option></select></label>
+<label>{{ _("Choose JPG image") }}<input type="file" name="image" accept=".jpg,.jpeg,image/jpeg" required></label>
+<button class="btn btn-primary" type="submit">{{ _("Analyze image") }}</button>
+</form>
+<div class="form-note">{{ _("Use a clear JPG/JPEG photo with good lighting. For plant disease confirmation, use a validated crop-specific model or expert/lab assessment.") }}</div>
+{% if result %}<div class="quick-info"><div><strong>{{ _("Finding") }}</strong><span>{{ result.finding|t }}</span></div><div><strong>{{ _("Recommendation") }}</strong><span>{{ result.recommendation|t|join(' ') }}</span></div></div>{% if result.top_predictions %}<div class="form-note"><strong>{{ _("Top matches:") }}</strong> {% for p in result.top_predictions %}{{ p.plant|t }} – {{ p.disease|t }} ({{ (p.confidence*100)|round|int }}%){% if not loop.last %}; {% endif %}{% endfor %}</div>{% endif %}{% endif %}</section>
+{% endblock %}

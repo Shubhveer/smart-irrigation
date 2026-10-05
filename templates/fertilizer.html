@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block title %}{{ _("Fertilizer Guide — Farm Saathi") }}{% endblock %}
+{% block content %}
+<section class="page-head"><div class="overline">{{ _("NUTRIENT PLANNING") }}</div><h1>{{ _("Plan fertilizer use carefully") }}</h1><p>{{ _("Use the crop and soil condition to organize questions for your fertilizer decision.") }}</p></section>
+<section class="two-col">
+<form class="work-panel" method="POST">
+  <label>{{ _("Crop") }}<select name="crop">{% for c in crops %}<option value="{{ c }}">{{ c|t }}</option>{% endfor %}</select></label>
+  <label>{{ _("Growth stage") }}<select name="stage">{% for c in ["Before sowing", "Early growth", "Vegetative growth", "Flowering", "Fruit / pod development", "Near harvest"] %}<option value="{{ c }}">{{ c|t }}</option>{% endfor %}</select></label>
+  <label>{{ _("Soil test available?") }}<select name="test"><option value="yes">{{ _("Yes") }}</option><option value="no">{{ _("No") }}</option></select></label>
+  <label>{{ _("Main concern") }}<select name="concern">{% for c in ["General nutrient planning", "Low nitrogen suspected", "Low phosphorus suspected", "Low potassium suspected", "Crop growth is weak"] %}<option value="{{ c }}">{{ c|t }}</option>{% endfor %}</select></label>
+  <button class="btn btn-primary">{{ _("Prepare nutrient plan") }}</button>
+</form>
+<aside class="result-side">
+{% if result %}
+<div class="side-title">{{ _("NUTRIENT PLAN") }}</div><h2>{{ result.title|t }}</h2><p>{{ result.summary|t }}</p>
+<div class="advice-list">{% for x in result.actions %}<div>{{ x|t }}</div>{% endfor %}</div>
+<p class="small-note">{{ result.note|t }}</p>
+{% else %}
+<div class="side-title">{{ _("IMPORTANT") }}</div><h2>{{ _("Fertilizer should follow the crop and soil test.") }}</h2><p>{{ _("Do not use a fixed dose for every field. The final rate depends on crop, yield target, soil test, previous crop, irrigation and local recommendations.") }}</p>
+{% endif %}
+</aside>
+</section>
+{% endblock %}

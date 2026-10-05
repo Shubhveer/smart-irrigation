@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block title %}{{ _("Soil Check — Farm Saathi") }}{% endblock %}
+{% block content %}
+<section class="page-head"><div class="overline">{{ _("SOIL MANAGEMENT") }}</div><h1>{{ _("Understand your soil readings") }}</h1><p>{{ _("Enter values from a soil test or sensor. Leave a value blank if you do not have it.") }}</p></section>
+<section class="two-col">
+<form class="work-panel" method="POST">
+  <label>{{ _("Crop") }}<select name="crop">{% for c in ["Cotton", "Soybean", "Wheat", "Sugarcane", "Orange"] %}<option value="{{ c }}">{{ c|t }}</option>{% endfor %}</select></label>
+  <label>{{ _("Soil pH") }}<input name="ph" type="number" step="0.1" min="0" max="14" placeholder="{{ _('Example: 6.8') }}"></label>
+  <div class="mini-grid"><label>{{ _("Nitrogen (N)") }}<input name="n" type="number" step="0.1" placeholder="{{ _('mg/kg') }}"></label><label>{{ _("Phosphorus (P)") }}<input name="p" type="number" step="0.1" placeholder="{{ _('mg/kg') }}"></label><label>{{ _("Potassium (K)") }}<input name="k" type="number" step="0.1" placeholder="{{ _('mg/kg') }}"></label><label>{{ _("Moisture %") }}<input name="moisture" type="number" step="0.1" placeholder="%"></label></div>
+  <button class="btn btn-primary">{{ _("Review soil") }}</button>
+</form>
+<aside class="result-side">
+{% if result %}
+<div class="side-title">{{ _("SOIL SUMMARY") }}</div>
+<div class="metric-grid">{% for m in result.metrics %}<div><span>{{ m.label|t }}</span><strong>{{ m.value }}</strong><small>{{ m.status|t }}</small></div>{% endfor %}</div>
+<h2>{{ result.title|t }}</h2><p>{{ result.summary|t }}</p>
+<div class="advice-list">{% for x in result.actions %}<div>{{ x|t }}</div>{% endfor %}</div>
+<p class="small-note">{{ _("Use a laboratory soil test for fertilizer decisions when possible. This page explains readings; it does not replace an agronomist's recommendation.") }}</p>
+{% else %}
+<div class="side-title">{{ _("WHAT TO ENTER") }}</div><h2>{{ _("Soil test results become easier to understand here.") }}</h2><p>{{ _("pH describes acidity/alkalinity. N, P and K are major nutrients. Moisture is useful for irrigation decisions when measured consistently.") }}</p>
+{% endif %}
+</aside>
+</section>
+{% endblock %}
